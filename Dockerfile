@@ -27,6 +27,8 @@ RUN \
   apt-get install sbt && \
   sbt sbtVersion
 
+  apt-get install -y mysql-server
+
 # Define working directory
 WORKDIR /root
 
