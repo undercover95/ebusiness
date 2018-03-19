@@ -25,8 +25,7 @@ RUN \
   rm sbt-$SBT_VERSION.deb && \
   apt-get update && \
   apt-get install sbt && \
-  sbt sbtVersion
-
+  sbt sbtVersion && \
   apt-get install -y mysql-server
 
 # Define working directory
