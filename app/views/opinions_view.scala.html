@@ -1,0 +1,21 @@
+@(productName: String, opinions: Seq[Opinion])(implicit request: MessagesRequestHeader)
+
+@request.flash.get("success").map { key =>
+    @request.messages(key)
+}
+
+@main("Opinie dla produktu") {
+    <h3>
+        Opinie dla produktu @productName
+    </h3>
+    <hr>
+
+    @for(opinion <- opinions){
+        <h4>@opinion.title</h4>
+        <p>@opinion.opinion</p>
+    }
+}
+
+
+
+
