@@ -1,0 +1,49 @@
+@(orders: collection.mutable.Map[Order, Seq[Product]])(implicit request: MessagesRequestHeader)
+
+@request.flash.get("success").map { key =>
+    @request.messages(key)
+}
+
+@main("Moje zamówienia") {
+    <h3>
+        Moje zamówienia
+    </h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>id zamówienia</th>
+                <th>produkty</th>
+                <th>Wartość zamówienia</th>
+            </tr>
+        </thead>
+        <tbody>
+        @for(order <- orders.keys){
+            <tr>
+                <td>@order.order_id</td>
+                <td>
+                    <ul>
+                    @for(product <- orders(order)){
+                        <li>@product.name (@product.price)</li>
+                    }
+                    </ul>
+                </td>
+                <td>
+                    @{
+                        var sum = 0.0
+                        for(product <- orders(order)){
+                            sum += product.price
+                        }
+                        "%.2f".format(sum)
+                    }
+
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
+
+
+
+
