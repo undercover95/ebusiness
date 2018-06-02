@@ -10,18 +10,19 @@ POST   /deleteproduct/:id           controllers.ProductController.deleteProduct(
 
 # Categories
 GET    /categories                  controllers.CategoryController.getCategories
+GET    /categoriesWithCounters      controllers.CategoryController.getCategoriesWithCounters
 POST   /addcategory                 controllers.CategoryController.addCategory
 
 
 # Cart
 GET    /cart                        controllers.CartController.getCartItems
 POST   /addcartitem                 controllers.CartController.addCartItem
-POST   /deletecartitem/:product_id  controllers.CartController.deleteCartItem(product_id: Long)
+POST   /deletecartitem              controllers.CartController.deleteCartItem
 
 
 # Orders
 GET    /orders                      controllers.OrderController.getOrders
-POST    /makeorder                   controllers.OrderController.makeOrder
+POST    /makeorder                  controllers.OrderController.makeOrder
 
 
 # Opinions

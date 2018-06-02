@@ -60,7 +60,12 @@ class CategoryRepository @Inject() (dbConfigProvider: DatabaseConfigProvider)(im
   }
 
 
-  def list(): Future[Seq[Category]] = db.run {
-    category.result
+  def list(): Future[Seq[Category]] = {
+    db.run(category.result)
+  }
+
+  def listWithCounters(): Future[Vector[(Int, String, Int)]] = {
+    val action = sql"select category.*,count(*) from category left join product on product.category==category.id group by category".as[(Int, String, Int)]
+    db.run(action)
   }
 }

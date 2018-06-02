@@ -7,7 +7,7 @@
 		revision="2.6.x"
 		conf="test"
 		confs="compile, runtime, test, provided, optional, universal, universal-docs, universal-src, windows, docker, linux, rpm, debian, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool, docs"
-		date="20180504084615"/>
+		date="20180602130731"/>
 	<dependencies>
 		<module organisation="org.xerial" name="sqlite-jdbc">
 			<revision name="3.21.0" status="release" pubdate="20171114102322" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="28">
@@ -15,7 +15,7 @@
 				<metadata-artifact status="no" details="" size="3279" time="0" location="/home/michal/.ivy2/cache/org.xerial/sqlite-jdbc/ivy-3.21.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/xerial/sqlite-jdbc/3.21.0/sqlite-jdbc-3.21.0.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="3.21.0" rev-constraint-default="3.21.0" rev-constraint-dynamic="3.21.0" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="sqlite-jdbc" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="6627846" time="9688" location="/home/michal/.ivy2/cache/org.xerial/sqlite-jdbc/srcs/sqlite-jdbc-3.21.0-sources.jar">
+					<artifact name="sqlite-jdbc" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="6627846" time="0" location="/home/michal/.ivy2/cache/org.xerial/sqlite-jdbc/srcs/sqlite-jdbc-3.21.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/xerial/sqlite-jdbc/3.21.0/sqlite-jdbc-3.21.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -27,7 +27,7 @@
 				<metadata-artifact status="no" details="" size="3259" time="0" location="/home/michal/.ivy2/cache/com.typesafe.play/play-slick-evolutions_2.12/ivy-3.0.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-slick-evolutions_2.12/3.0.3/play-slick-evolutions_2.12-3.0.3.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="3.0.3" rev-constraint-default="3.0.3" rev-constraint-dynamic="3.0.3" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="play-slick-evolutions_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="3435" time="1042" location="/home/michal/.ivy2/cache/com.typesafe.play/play-slick-evolutions_2.12/srcs/play-slick-evolutions_2.12-3.0.3-sources.jar">
+					<artifact name="play-slick-evolutions_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="3435" time="0" location="/home/michal/.ivy2/cache/com.typesafe.play/play-slick-evolutions_2.12/srcs/play-slick-evolutions_2.12-3.0.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-slick-evolutions_2.12/3.0.3/play-slick-evolutions_2.12-3.0.3-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -39,7 +39,7 @@
 				<metadata-artifact status="no" details="" size="3346" time="0" location="/home/michal/.ivy2/cache/com.typesafe.play/play-jdbc-evolutions_2.12/ivy-2.6.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-jdbc-evolutions_2.12/2.6.5/play-jdbc-evolutions_2.12-2.6.5.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="2.6.5" rev-constraint-default="2.6.5" rev-constraint-dynamic="2.6.5" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="play-jdbc-evolutions_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="17785" time="297" location="/home/michal/.ivy2/cache/com.typesafe.play/play-jdbc-evolutions_2.12/srcs/play-jdbc-evolutions_2.12-2.6.5-sources.jar">
+					<artifact name="play-jdbc-evolutions_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="17785" time="0" location="/home/michal/.ivy2/cache/com.typesafe.play/play-jdbc-evolutions_2.12/srcs/play-jdbc-evolutions_2.12-2.6.5-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-jdbc-evolutions_2.12/2.6.5/play-jdbc-evolutions_2.12-2.6.5-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -51,7 +51,7 @@
 				<metadata-artifact status="no" details="" size="3257" time="0" location="/home/michal/.ivy2/cache/com.typesafe.play/play-slick_2.12/ivy-3.0.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-slick_2.12/3.0.3/play-slick_2.12-3.0.3.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="3.0.3" rev-constraint-default="3.0.3" rev-constraint-dynamic="3.0.3" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="play-slick_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="6360" time="1035" location="/home/michal/.ivy2/cache/com.typesafe.play/play-slick_2.12/srcs/play-slick_2.12-3.0.3-sources.jar">
+					<artifact name="play-slick_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="6360" time="0" location="/home/michal/.ivy2/cache/com.typesafe.play/play-slick_2.12/srcs/play-slick_2.12-3.0.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-slick_2.12/3.0.3/play-slick_2.12-3.0.3-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -63,7 +63,7 @@
 				<metadata-artifact status="no" details="" size="3036" time="0" location="/home/michal/.ivy2/cache/com.typesafe.slick/slick-hikaricp_2.12/ivy-3.2.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/slick/slick-hikaricp_2.12/3.2.1/slick-hikaricp_2.12-3.2.1.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="3.2.1" rev-constraint-default="3.2.1" rev-constraint-dynamic="3.2.1" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="slick-hikaricp_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="1693" time="815" location="/home/michal/.ivy2/cache/com.typesafe.slick/slick-hikaricp_2.12/srcs/slick-hikaricp_2.12-3.2.1-sources.jar">
+					<artifact name="slick-hikaricp_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1693" time="0" location="/home/michal/.ivy2/cache/com.typesafe.slick/slick-hikaricp_2.12/srcs/slick-hikaricp_2.12-3.2.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/slick/slick-hikaricp_2.12/3.2.1/slick-hikaricp_2.12-3.2.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -75,7 +75,7 @@
 				<metadata-artifact status="no" details="" size="7421" time="0" location="/home/michal/.ivy2/cache/com.zaxxer/HikariCP/ivy-2.5.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/zaxxer/HikariCP/2.5.1/HikariCP-2.5.1.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="2.5.1" rev-constraint-default="2.5.1" rev-constraint-dynamic="2.5.1" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="HikariCP" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="70281" time="1286" location="/home/michal/.ivy2/cache/com.zaxxer/HikariCP/srcs/HikariCP-2.5.1-sources.jar">
+					<artifact name="HikariCP" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="70281" time="0" location="/home/michal/.ivy2/cache/com.zaxxer/HikariCP/srcs/HikariCP-2.5.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/zaxxer/HikariCP/2.5.1/HikariCP-2.5.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -87,7 +87,7 @@
 				<metadata-artifact status="no" details="" size="3130" time="0" location="/home/michal/.ivy2/cache/com.typesafe.slick/slick_2.12/ivy-3.2.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/slick/slick_2.12/3.2.1/slick_2.12-3.2.1.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="3.2.1" rev-constraint-default="3.2.1" rev-constraint-dynamic="3.2.1" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="slick_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="320796" time="5491" location="/home/michal/.ivy2/cache/com.typesafe.slick/slick_2.12/srcs/slick_2.12-3.2.1-sources.jar">
+					<artifact name="slick_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="320796" time="0" location="/home/michal/.ivy2/cache/com.typesafe.slick/slick_2.12/srcs/slick_2.12-3.2.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/slick/slick_2.12/3.2.1/slick_2.12-3.2.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -99,7 +99,7 @@
 				<metadata-artifact status="no" details="" size="2807" time="0" location="/home/michal/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.12/ivy-2.6.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-jdbc-api_2.12/2.6.5/play-jdbc-api_2.12-2.6.5.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="2.6.5" rev-constraint-default="2.6.5" rev-constraint-dynamic="2.6.5" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="play-jdbc-api_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="5495" time="1103" location="/home/michal/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.12/srcs/play-jdbc-api_2.12-2.6.5-sources.jar">
+					<artifact name="play-jdbc-api_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="5495" time="0" location="/home/michal/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.12/srcs/play-jdbc-api_2.12-2.6.5-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-jdbc-api_2.12/2.6.5/play-jdbc-api_2.12-2.6.5-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -111,7 +111,7 @@
 				<metadata-artifact status="no" details="" size="3331" time="0" location="/home/michal/.ivy2/cache/com.typesafe.play/filters-helpers_2.12/ivy-2.6.13.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/filters-helpers_2.12/2.6.13/filters-helpers_2.12-2.6.13.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="2.6.13" rev-constraint-default="2.6.13" rev-constraint-dynamic="2.6.13" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="filters-helpers_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="46221" time="2174" location="/home/michal/.ivy2/cache/com.typesafe.play/filters-helpers_2.12/srcs/filters-helpers_2.12-2.6.13-sources.jar">
+					<artifact name="filters-helpers_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="46221" time="0" location="/home/michal/.ivy2/cache/com.typesafe.play/filters-helpers_2.12/srcs/filters-helpers_2.12-2.6.13-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/filters-helpers_2.12/2.6.13/filters-helpers_2.12-2.6.13-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -123,7 +123,7 @@
 				<metadata-artifact status="no" details="" size="3084" time="0" location="/home/michal/.ivy2/cache/com.typesafe.play/play-logback_2.12/ivy-2.6.13.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-logback_2.12/2.6.13/play-logback_2.12-2.6.13.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="2.6.13" rev-constraint-default="2.6.13" rev-constraint-dynamic="2.6.13" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="play-logback_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="5868" time="1396" location="/home/michal/.ivy2/cache/com.typesafe.play/play-logback_2.12/srcs/play-logback_2.12-2.6.13-sources.jar">
+					<artifact name="play-logback_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="5868" time="0" location="/home/michal/.ivy2/cache/com.typesafe.play/play-logback_2.12/srcs/play-logback_2.12-2.6.13-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-logback_2.12/2.6.13/play-logback_2.12-2.6.13-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -135,7 +135,7 @@
 				<metadata-artifact status="no" details="" size="3392" time="0" location="/home/michal/.ivy2/cache/com.typesafe.play/play-specs2_2.12/ivy-2.6.13.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-specs2_2.12/2.6.13/play-specs2_2.12-2.6.13.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="2.6.13" rev-constraint-default="2.6.13" rev-constraint-dynamic="2.6.13" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="play-specs2_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="2497" time="1154" location="/home/michal/.ivy2/cache/com.typesafe.play/play-specs2_2.12/srcs/play-specs2_2.12-2.6.13-sources.jar">
+					<artifact name="play-specs2_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="2497" time="0" location="/home/michal/.ivy2/cache/com.typesafe.play/play-specs2_2.12/srcs/play-specs2_2.12-2.6.13-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-specs2_2.12/2.6.13/play-specs2_2.12-2.6.13-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -147,7 +147,7 @@
 				<metadata-artifact status="no" details="" size="5593" time="0" location="/home/michal/.ivy2/cache/com.typesafe.play/play-test_2.12/ivy-2.6.13.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-test_2.12/2.6.13/play-test_2.12-2.6.13.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="2.6.13" rev-constraint-default="2.6.13" rev-constraint-dynamic="2.6.13" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="play-test_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="21784" time="1030" location="/home/michal/.ivy2/cache/com.typesafe.play/play-test_2.12/srcs/play-test_2.12-2.6.13-sources.jar">
+					<artifact name="play-test_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="21784" time="0" location="/home/michal/.ivy2/cache/com.typesafe.play/play-test_2.12/srcs/play-test_2.12-2.6.13-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-test_2.12/2.6.13/play-test_2.12-2.6.13-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -159,7 +159,7 @@
 				<metadata-artifact status="no" details="" size="5530" time="0" location="/home/michal/.ivy2/cache/org.seleniumhq.selenium/selenium-firefox-driver/ivy-3.5.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-firefox-driver/3.5.3/selenium-firefox-driver-3.5.3.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="3.5.3" rev-constraint-default="3.5.3" rev-constraint-dynamic="3.5.3" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="selenium-firefox-driver" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="38663" time="1293" location="/home/michal/.ivy2/cache/org.seleniumhq.selenium/selenium-firefox-driver/srcs/selenium-firefox-driver-3.5.3-sources.jar">
+					<artifact name="selenium-firefox-driver" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="38663" time="0" location="/home/michal/.ivy2/cache/org.seleniumhq.selenium/selenium-firefox-driver/srcs/selenium-firefox-driver-3.5.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-firefox-driver/3.5.3/selenium-firefox-driver-3.5.3-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -171,7 +171,7 @@
 				<metadata-artifact status="no" details="" size="5970" time="0" location="/home/michal/.ivy2/cache/org.seleniumhq.selenium/selenium-support/ivy-3.5.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-support/3.5.3/selenium-support-3.5.3.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="3.5.3" rev-constraint-default="3.5.3" rev-constraint-dynamic="3.5.3" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="selenium-support" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="73180" time="2898" location="/home/michal/.ivy2/cache/org.seleniumhq.selenium/selenium-support/srcs/selenium-support-3.5.3-sources.jar">
+					<artifact name="selenium-support" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="73180" time="0" location="/home/michal/.ivy2/cache/org.seleniumhq.selenium/selenium-support/srcs/selenium-support-3.5.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-support/3.5.3/selenium-support-3.5.3-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -183,7 +183,7 @@
 				<metadata-artifact status="no" details="" size="5259" time="0" location="/home/michal/.ivy2/cache/org.seleniumhq.selenium/selenium-remote-driver/ivy-3.5.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-remote-driver/3.5.3/selenium-remote-driver-3.5.3.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="3.5.3" rev-constraint-default="3.5.3" rev-constraint-dynamic="3.5.3" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="selenium-remote-driver" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="217450" time="3763" location="/home/michal/.ivy2/cache/org.seleniumhq.selenium/selenium-remote-driver/srcs/selenium-remote-driver-3.5.3-sources.jar">
+					<artifact name="selenium-remote-driver" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="217450" time="0" location="/home/michal/.ivy2/cache/org.seleniumhq.selenium/selenium-remote-driver/srcs/selenium-remote-driver-3.5.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-remote-driver/3.5.3/selenium-remote-driver-3.5.3-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -196,7 +196,7 @@
 				<metadata-artifact status="no" details="" size="2732" time="0" location="/home/michal/.ivy2/cache/net.java.dev.jna/jna-platform/ivy-4.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/java/dev/jna/jna-platform/4.1.0/jna-platform-4.1.0.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="4.1.0" rev-constraint-default="4.1.0" rev-constraint-dynamic="4.1.0" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="jna-platform" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="538955" time="4596" location="/home/michal/.ivy2/cache/net.java.dev.jna/jna-platform/srcs/jna-platform-4.1.0-sources.jar">
+					<artifact name="jna-platform" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="538955" time="0" location="/home/michal/.ivy2/cache/net.java.dev.jna/jna-platform/srcs/jna-platform-4.1.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/java/dev/jna/jna-platform/4.1.0/jna-platform-4.1.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -209,7 +209,7 @@
 				<metadata-artifact status="no" details="" size="2534" time="0" location="/home/michal/.ivy2/cache/net.java.dev.jna/jna/ivy-4.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/java/dev/jna/jna/4.1.0/jna-4.1.0.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="4.1.0" rev-constraint-default="4.1.0" rev-constraint-dynamic="4.1.0" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="jna" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="135355" time="2515" location="/home/michal/.ivy2/cache/net.java.dev.jna/jna/srcs/jna-4.1.0-sources.jar">
+					<artifact name="jna" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="135355" time="0" location="/home/michal/.ivy2/cache/net.java.dev.jna/jna/srcs/jna-4.1.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/java/dev/jna/jna/4.1.0/jna-4.1.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -221,7 +221,7 @@
 				<metadata-artifact status="no" details="" size="3505" time="0" location="/home/michal/.ivy2/cache/com.google.code.gson/gson/ivy-2.8.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/code/gson/gson/2.8.0/gson-2.8.0.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="2.8.0" rev-constraint-default="2.8.0" rev-constraint-dynamic="2.8.0" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="gson" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="146908" time="1432" location="/home/michal/.ivy2/cache/com.google.code.gson/gson/srcs/gson-2.8.0-sources.jar">
+					<artifact name="gson" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="146908" time="0" location="/home/michal/.ivy2/cache/com.google.code.gson/gson/srcs/gson-2.8.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/code/gson/gson/2.8.0/gson-2.8.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -233,7 +233,7 @@
 				<metadata-artifact status="no" details="" size="10376" time="0" location="/home/michal/.ivy2/cache/org.apache.commons/commons-exec/ivy-1.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-exec/1.3/commons-exec-1.3.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="1.3" rev-constraint-default="1.3" rev-constraint-dynamic="1.3" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="commons-exec" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="61886" time="1342" location="/home/michal/.ivy2/cache/org.apache.commons/commons-exec/srcs/commons-exec-1.3-sources.jar">
+					<artifact name="commons-exec" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="61886" time="0" location="/home/michal/.ivy2/cache/org.apache.commons/commons-exec/srcs/commons-exec-1.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-exec/1.3/commons-exec-1.3-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -245,7 +245,7 @@
 				<metadata-artifact status="no" details="" size="4385" time="0" location="/home/michal/.ivy2/cache/cglib/cglib-nodep/ivy-3.2.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/cglib/cglib-nodep/3.2.4/cglib-nodep-3.2.4.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="3.2.4" rev-constraint-default="3.2.4" rev-constraint-dynamic="3.2.4" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="cglib-nodep" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="4641" time="815" location="/home/michal/.ivy2/cache/cglib/cglib-nodep/srcs/cglib-nodep-3.2.4-sources.jar">
+					<artifact name="cglib-nodep" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="4641" time="0" location="/home/michal/.ivy2/cache/cglib/cglib-nodep/srcs/cglib-nodep-3.2.4-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/cglib/cglib-nodep/3.2.4/cglib-nodep-3.2.4-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -257,7 +257,7 @@
 				<metadata-artifact status="no" details="" size="2588" time="0" location="/home/michal/.ivy2/cache/org.seleniumhq.selenium/selenium-api/ivy-3.5.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-api/3.5.3/selenium-api-3.5.3.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="3.5.3" rev-constraint-default="3.5.3" rev-constraint-dynamic="3.5.3" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="selenium-api" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="115826" time="5622" location="/home/michal/.ivy2/cache/org.seleniumhq.selenium/selenium-api/srcs/selenium-api-3.5.3-sources.jar">
+					<artifact name="selenium-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="115826" time="0" location="/home/michal/.ivy2/cache/org.seleniumhq.selenium/selenium-api/srcs/selenium-api-3.5.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-api/3.5.3/selenium-api-3.5.3-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -269,7 +269,7 @@
 				<metadata-artifact status="no" details="" size="4998" time="0" location="/home/michal/.ivy2/cache/org.seleniumhq.selenium/htmlunit-driver/ivy-2.27.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/htmlunit-driver/2.27/htmlunit-driver-2.27.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="2.27" rev-constraint-default="2.27" rev-constraint-dynamic="2.27" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="htmlunit-driver" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="36362" time="2752" location="/home/michal/.ivy2/cache/org.seleniumhq.selenium/htmlunit-driver/srcs/htmlunit-driver-2.27-sources.jar">
+					<artifact name="htmlunit-driver" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="36362" time="0" location="/home/michal/.ivy2/cache/org.seleniumhq.selenium/htmlunit-driver/srcs/htmlunit-driver-2.27-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/htmlunit-driver/2.27/htmlunit-driver-2.27-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -281,7 +281,7 @@
 				<metadata-artifact status="no" details="" size="9573" time="0" location="/home/michal/.ivy2/cache/net.sourceforge.htmlunit/htmlunit/ivy-2.27.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/sourceforge/htmlunit/htmlunit/2.27/htmlunit-2.27.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="2.27" rev-constraint-default="2.27" rev-constraint-dynamic="2.27" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="htmlunit" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="1895390" time="5604" location="/home/michal/.ivy2/cache/net.sourceforge.htmlunit/htmlunit/srcs/htmlunit-2.27-sources.jar">
+					<artifact name="htmlunit" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1895390" time="0" location="/home/michal/.ivy2/cache/net.sourceforge.htmlunit/htmlunit/srcs/htmlunit-2.27-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/sourceforge/htmlunit/htmlunit/2.27/htmlunit-2.27-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -294,7 +294,7 @@
 				<metadata-artifact status="no" details="" size="10017" time="0" location="/home/michal/.ivy2/cache/org.eclipse.jetty.websocket/websocket-client/ivy-9.4.5.v20170502.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/websocket/websocket-client/9.4.5.v20170502/websocket-client-9.4.5.v20170502.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="9.4.5.v20170502" rev-constraint-default="9.4.5.v20170502" rev-constraint-dynamic="9.4.5.v20170502" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="websocket-client" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="24845" time="362" location="/home/michal/.ivy2/cache/org.eclipse.jetty.websocket/websocket-client/srcs/websocket-client-9.4.5.v20170502-sources.jar">
+					<artifact name="websocket-client" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="24845" time="0" location="/home/michal/.ivy2/cache/org.eclipse.jetty.websocket/websocket-client/srcs/websocket-client-9.4.5.v20170502-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/websocket/websocket-client/9.4.5.v20170502/websocket-client-9.4.5.v20170502-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -307,7 +307,7 @@
 				<metadata-artifact status="no" details="" size="9581" time="0" location="/home/michal/.ivy2/cache/org.eclipse.jetty.websocket/websocket-common/ivy-9.4.5.v20170502.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/websocket/websocket-common/9.4.5.v20170502/websocket-common-9.4.5.v20170502.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="9.4.5.v20170502" rev-constraint-default="9.4.5.v20170502" rev-constraint-dynamic="9.4.5.v20170502" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="websocket-common" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="134847" time="2999" location="/home/michal/.ivy2/cache/org.eclipse.jetty.websocket/websocket-common/srcs/websocket-common-9.4.5.v20170502-sources.jar">
+					<artifact name="websocket-common" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="134847" time="0" location="/home/michal/.ivy2/cache/org.eclipse.jetty.websocket/websocket-common/srcs/websocket-common-9.4.5.v20170502-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/websocket/websocket-common/9.4.5.v20170502/websocket-common-9.4.5.v20170502-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -320,7 +320,7 @@
 				<metadata-artifact status="no" details="" size="9044" time="0" location="/home/michal/.ivy2/cache/org.eclipse.jetty.websocket/websocket-api/ivy-9.4.5.v20170502.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/websocket/websocket-api/9.4.5.v20170502/websocket-api-9.4.5.v20170502.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="9.4.5.v20170502" rev-constraint-default="9.4.5.v20170502" rev-constraint-dynamic="9.4.5.v20170502" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="websocket-api" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="53049" time="1834" location="/home/michal/.ivy2/cache/org.eclipse.jetty.websocket/websocket-api/srcs/websocket-api-9.4.5.v20170502-sources.jar">
+					<artifact name="websocket-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="53049" time="0" location="/home/michal/.ivy2/cache/org.eclipse.jetty.websocket/websocket-api/srcs/websocket-api-9.4.5.v20170502-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/websocket/websocket-api/9.4.5.v20170502/websocket-api-9.4.5.v20170502-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -333,7 +333,7 @@
 				<metadata-artifact status="no" details="" size="8993" time="0" location="/home/michal/.ivy2/cache/org.eclipse.jetty/jetty-client/ivy-9.4.5.v20170502.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-client/9.4.5.v20170502/jetty-client-9.4.5.v20170502.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="9.4.5.v20170502" rev-constraint-default="9.4.5.v20170502" rev-constraint-dynamic="9.4.5.v20170502" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="jetty-client" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="149022" time="1203" location="/home/michal/.ivy2/cache/org.eclipse.jetty/jetty-client/srcs/jetty-client-9.4.5.v20170502-sources.jar">
+					<artifact name="jetty-client" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="149022" time="0" location="/home/michal/.ivy2/cache/org.eclipse.jetty/jetty-client/srcs/jetty-client-9.4.5.v20170502-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-client/9.4.5.v20170502/jetty-client-9.4.5.v20170502-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -346,7 +346,7 @@
 				<metadata-artifact status="no" details="" size="8605" time="0" location="/home/michal/.ivy2/cache/org.eclipse.jetty/jetty-http/ivy-9.4.5.v20170502.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-http/9.4.5.v20170502/jetty-http-9.4.5.v20170502.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="9.4.5.v20170502" rev-constraint-default="9.4.5.v20170502" rev-constraint-dynamic="9.4.5.v20170502" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="jetty-http" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="98662" time="3288" location="/home/michal/.ivy2/cache/org.eclipse.jetty/jetty-http/srcs/jetty-http-9.4.5.v20170502-sources.jar">
+					<artifact name="jetty-http" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="98662" time="0" location="/home/michal/.ivy2/cache/org.eclipse.jetty/jetty-http/srcs/jetty-http-9.4.5.v20170502-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-http/9.4.5.v20170502/jetty-http-9.4.5.v20170502-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -359,7 +359,7 @@
 				<metadata-artifact status="no" details="" size="8352" time="0" location="/home/michal/.ivy2/cache/org.eclipse.jetty/jetty-io/ivy-9.4.5.v20170502.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-io/9.4.5.v20170502/jetty-io-9.4.5.v20170502.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="9.4.5.v20170502" rev-constraint-default="9.4.5.v20170502" rev-constraint-dynamic="9.4.5.v20170502" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="jetty-io" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="67634" time="1229" location="/home/michal/.ivy2/cache/org.eclipse.jetty/jetty-io/srcs/jetty-io-9.4.5.v20170502-sources.jar">
+					<artifact name="jetty-io" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="67634" time="0" location="/home/michal/.ivy2/cache/org.eclipse.jetty/jetty-io/srcs/jetty-io-9.4.5.v20170502-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-io/9.4.5.v20170502/jetty-io-9.4.5.v20170502-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -372,7 +372,7 @@
 				<metadata-artifact status="no" details="" size="8795" time="0" location="/home/michal/.ivy2/cache/org.eclipse.jetty/jetty-util/ivy-9.4.5.v20170502.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-util/9.4.5.v20170502/jetty-util-9.4.5.v20170502.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="9.4.5.v20170502" rev-constraint-default="9.4.5.v20170502" rev-constraint-dynamic="9.4.5.v20170502" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="jetty-util" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="308918" time="2287" location="/home/michal/.ivy2/cache/org.eclipse.jetty/jetty-util/srcs/jetty-util-9.4.5.v20170502-sources.jar">
+					<artifact name="jetty-util" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="308918" time="0" location="/home/michal/.ivy2/cache/org.eclipse.jetty/jetty-util/srcs/jetty-util-9.4.5.v20170502-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-util/9.4.5.v20170502/jetty-util-9.4.5.v20170502-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -384,7 +384,7 @@
 				<metadata-artifact status="no" details="" size="3783" time="0" location="/home/michal/.ivy2/cache/net.sourceforge.cssparser/cssparser/ivy-0.9.23.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/sourceforge/cssparser/cssparser/0.9.23/cssparser-0.9.23.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="0.9.23" rev-constraint-default="0.9.23" rev-constraint-dynamic="0.9.23" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="cssparser" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="245655" time="2125" location="/home/michal/.ivy2/cache/net.sourceforge.cssparser/cssparser/srcs/cssparser-0.9.23-sources.jar">
+					<artifact name="cssparser" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="245655" time="0" location="/home/michal/.ivy2/cache/net.sourceforge.cssparser/cssparser/srcs/cssparser-0.9.23-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/sourceforge/cssparser/cssparser/0.9.23/cssparser-0.9.23-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -396,7 +396,7 @@
 				<metadata-artifact status="no" details="" size="2511" time="0" location="/home/michal/.ivy2/cache/org.w3c.css/sac/ivy-1.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/w3c/css/sac/1.3/sac-1.3.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="1.3" rev-constraint-default="1.3" rev-constraint-dynamic="1.3" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="sac" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="33134" time="1175" location="/home/michal/.ivy2/cache/org.w3c.css/sac/srcs/sac-1.3-sources.jar">
+					<artifact name="sac" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="33134" time="0" location="/home/michal/.ivy2/cache/org.w3c.css/sac/srcs/sac-1.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/w3c/css/sac/1.3/sac-1.3-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -408,7 +408,7 @@
 				<metadata-artifact status="no" details="" size="3270" time="0" location="/home/michal/.ivy2/cache/net.sourceforge.htmlunit/neko-htmlunit/ivy-2.27.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/sourceforge/htmlunit/neko-htmlunit/2.27/neko-htmlunit-2.27.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="2.27" rev-constraint-default="2.27" rev-constraint-dynamic="2.27" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="neko-htmlunit" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="103782" time="1855" location="/home/michal/.ivy2/cache/net.sourceforge.htmlunit/neko-htmlunit/srcs/neko-htmlunit-2.27-sources.jar">
+					<artifact name="neko-htmlunit" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="103782" time="0" location="/home/michal/.ivy2/cache/net.sourceforge.htmlunit/neko-htmlunit/srcs/neko-htmlunit-2.27-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/sourceforge/htmlunit/neko-htmlunit/2.27/neko-htmlunit-2.27-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -420,7 +420,7 @@
 				<metadata-artifact status="no" details="" size="4398" time="0" location="/home/michal/.ivy2/cache/xerces/xercesImpl/ivy-2.11.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="2.11.0" rev-constraint-default="2.11.0" rev-constraint-dynamic="2.11.0" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="xercesImpl" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="2081596" time="9542" location="/home/michal/.ivy2/cache/xerces/xercesImpl/srcs/xercesImpl-2.11.0-sources.jar">
+					<artifact name="xercesImpl" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="2081596" time="0" location="/home/michal/.ivy2/cache/xerces/xercesImpl/srcs/xercesImpl-2.11.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -432,7 +432,7 @@
 				<metadata-artifact status="no" details="" size="2731" time="0" location="/home/michal/.ivy2/cache/net.sourceforge.htmlunit/htmlunit-core-js/ivy-2.27.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/sourceforge/htmlunit/htmlunit-core-js/2.27/htmlunit-core-js-2.27.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="2.27" rev-constraint-default="2.27" rev-constraint-dynamic="2.27" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="htmlunit-core-js" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="936463" time="3325" location="/home/michal/.ivy2/cache/net.sourceforge.htmlunit/htmlunit-core-js/srcs/htmlunit-core-js-2.27-sources.jar">
+					<artifact name="htmlunit-core-js" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="936463" time="0" location="/home/michal/.ivy2/cache/net.sourceforge.htmlunit/htmlunit-core-js/srcs/htmlunit-core-js-2.27-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/sourceforge/htmlunit/htmlunit-core-js/2.27/htmlunit-core-js-2.27-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -444,7 +444,7 @@
 				<metadata-artifact status="no" details="" size="9321" time="0" location="/home/michal/.ivy2/cache/org.apache.httpcomponents/httpmime/ivy-4.5.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpmime/4.5.3/httpmime-4.5.3.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="4.5.3" rev-constraint-default="4.5.3" rev-constraint-dynamic="4.5.3" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="httpmime" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="38717" time="1376" location="/home/michal/.ivy2/cache/org.apache.httpcomponents/httpmime/srcs/httpmime-4.5.3-sources.jar">
+					<artifact name="httpmime" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="38717" time="0" location="/home/michal/.ivy2/cache/org.apache.httpcomponents/httpmime/srcs/httpmime-4.5.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpmime/4.5.3/httpmime-4.5.3-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -456,7 +456,7 @@
 				<metadata-artifact status="no" details="" size="9802" time="0" location="/home/michal/.ivy2/cache/org.apache.httpcomponents/httpclient/ivy-4.5.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="4.5.3" rev-constraint-default="4.5.3" rev-constraint-dynamic="4.5.3" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="httpclient" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="712826" time="11372" location="/home/michal/.ivy2/cache/org.apache.httpcomponents/httpclient/srcs/httpclient-4.5.3-sources.jar">
+					<artifact name="httpclient" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="712826" time="0" location="/home/michal/.ivy2/cache/org.apache.httpcomponents/httpclient/srcs/httpclient-4.5.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -468,7 +468,7 @@
 				<metadata-artifact status="no" details="" size="8156" time="0" location="/home/michal/.ivy2/cache/org.apache.httpcomponents/httpcore/ivy-4.4.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="4.4.6" rev-constraint-default="4.4.6" rev-constraint-dynamic="4.4.6" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="httpcore" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="399237" time="3729" location="/home/michal/.ivy2/cache/org.apache.httpcomponents/httpcore/srcs/httpcore-4.4.6-sources.jar">
+					<artifact name="httpcore" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="399237" time="0" location="/home/michal/.ivy2/cache/org.apache.httpcomponents/httpcore/srcs/httpcore-4.4.6-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -480,7 +480,7 @@
 				<metadata-artifact status="no" details="" size="11623" time="0" location="/home/michal/.ivy2/cache/commons-logging/commons-logging/ivy-1.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-logging/commons-logging/1.2/commons-logging-1.2.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="commons-logging" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="73295" time="1098" location="/home/michal/.ivy2/cache/commons-logging/commons-logging/srcs/commons-logging-1.2-sources.jar">
+					<artifact name="commons-logging" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="73295" time="0" location="/home/michal/.ivy2/cache/commons-logging/commons-logging/srcs/commons-logging-1.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-logging/commons-logging/1.2/commons-logging-1.2-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -492,7 +492,7 @@
 				<metadata-artifact status="no" details="" size="3178" time="0" location="/home/michal/.ivy2/cache/xalan/xalan/ivy-2.7.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/xalan/xalan/2.7.2/xalan-2.7.2.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="2.7.2" rev-constraint-default="2.7.2" rev-constraint-dynamic="2.7.2" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="xalan" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="3395855" time="3628" location="/home/michal/.ivy2/cache/xalan/xalan/srcs/xalan-2.7.2-sources.jar">
+					<artifact name="xalan" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="3395855" time="0" location="/home/michal/.ivy2/cache/xalan/xalan/srcs/xalan-2.7.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/xalan/xalan/2.7.2/xalan-2.7.2-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -504,7 +504,7 @@
 				<metadata-artifact status="no" details="" size="2988" time="0" location="/home/michal/.ivy2/cache/xalan/serializer/ivy-2.7.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/xalan/serializer/2.7.2/serializer-2.7.2.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="2.7.2" rev-constraint-default="2.7.2" rev-constraint-dynamic="2.7.2" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="serializer" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="3395855" time="16059" location="/home/michal/.ivy2/cache/xalan/serializer/srcs/serializer-2.7.2-sources.jar">
+					<artifact name="serializer" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="3395855" time="0" location="/home/michal/.ivy2/cache/xalan/serializer/srcs/serializer-2.7.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/xalan/serializer/2.7.2/serializer-2.7.2-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -516,7 +516,7 @@
 				<metadata-artifact status="no" details="" size="8333" time="0" location="/home/michal/.ivy2/cache/org.fluentlenium/fluentlenium-core/ivy-3.3.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/fluentlenium/fluentlenium-core/3.3.0/fluentlenium-core-3.3.0.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="3.3.0" rev-constraint-default="3.3.0" rev-constraint-dynamic="3.3.0" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="fluentlenium-core" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="221150" time="2112" location="/home/michal/.ivy2/cache/org.fluentlenium/fluentlenium-core/srcs/fluentlenium-core-3.3.0-sources.jar">
+					<artifact name="fluentlenium-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="221150" time="0" location="/home/michal/.ivy2/cache/org.fluentlenium/fluentlenium-core/srcs/fluentlenium-core-3.3.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/fluentlenium/fluentlenium-core/3.3.0/fluentlenium-core-3.3.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -530,7 +530,7 @@
 				<metadata-artifact status="no" details="" size="3258" time="0" location="/home/michal/.ivy2/cache/xml-apis/xml-apis/ivy-1.4.01.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="1.4.01" rev-constraint-default="1.4.01" rev-constraint-dynamic="1.4.01" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="xml-apis" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="656529" time="1366" location="/home/michal/.ivy2/cache/xml-apis/xml-apis/srcs/xml-apis-1.4.01-sources.jar">
+					<artifact name="xml-apis" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="656529" time="0" location="/home/michal/.ivy2/cache/xml-apis/xml-apis/srcs/xml-apis-1.4.01-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -542,7 +542,7 @@
 				<metadata-artifact status="no" details="" size="11588" time="0" location="/home/michal/.ivy2/cache/commons-io/commons-io/ivy-2.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-io/commons-io/2.5/commons-io-2.5.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="2.5" rev-constraint-default="2.5" rev-constraint-dynamic="2.5" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="commons-io" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="275699" time="1883" location="/home/michal/.ivy2/cache/commons-io/commons-io/srcs/commons-io-2.5-sources.jar">
+					<artifact name="commons-io" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="275699" time="0" location="/home/michal/.ivy2/cache/commons-io/commons-io/srcs/commons-io-2.5-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-io/commons-io/2.5/commons-io-2.5-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -554,7 +554,7 @@
 				<metadata-artifact status="no" details="" size="8255" time="0" location="/home/michal/.ivy2/cache/org.atteo.classindex/classindex/ivy-3.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/atteo/classindex/classindex/3.4/classindex-3.4.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="3.4" rev-constraint-default="3.4" rev-constraint-dynamic="3.4" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="classindex" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="13531" time="1128" location="/home/michal/.ivy2/cache/org.atteo.classindex/classindex/srcs/classindex-3.4-sources.jar">
+					<artifact name="classindex" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="13531" time="0" location="/home/michal/.ivy2/cache/org.atteo.classindex/classindex/srcs/classindex-3.4-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/atteo/classindex/classindex/3.4/classindex-3.4-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -566,17 +566,9 @@
 				<metadata-artifact status="no" details="" size="3268" time="0" location="/home/michal/.ivy2/cache/com.google.code.findbugs/jsr305/ivy-3.0.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="3.0.2" rev-constraint-default="3.0.2" rev-constraint-dynamic="3.0.2" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="jsr305" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="18102" time="444" location="/home/michal/.ivy2/cache/com.google.code.findbugs/jsr305/srcs/jsr305-3.0.2-sources.jar">
+					<artifact name="jsr305" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="18102" time="0" location="/home/michal/.ivy2/cache/com.google.code.findbugs/jsr305/srcs/jsr305-3.0.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2-sources.jar"/>
 					</artifact>
-				</artifacts>
-			</revision>
-			<revision name="1.3.9" status="release" pubdate="20090825002822" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://findbugs.sourceforge.net/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
-				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="no" details="" size="2519" time="0" location="/home/michal/.ivy2/cache/com.google.code.findbugs/jsr305/ivy-1.3.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.pom"/>
-				<evicted-by rev="3.0.2"/>
-				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="1.3.9" rev-constraint-default="1.3.9" rev-constraint-dynamic="1.3.9" callerrev="2.6.x"/>
-				<artifacts>
 				</artifacts>
 			</revision>
 		</module>
@@ -586,7 +578,7 @@
 				<metadata-artifact status="no" details="" size="3772" time="0" location="/home/michal/.ivy2/cache/com.typesafe.play/play-akka-http-server_2.12/ivy-2.6.13.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-akka-http-server_2.12/2.6.13/play-akka-http-server_2.12-2.6.13.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="2.6.13" rev-constraint-default="2.6.13" rev-constraint-dynamic="2.6.13" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="play-akka-http-server_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="16770" time="660" location="/home/michal/.ivy2/cache/com.typesafe.play/play-akka-http-server_2.12/srcs/play-akka-http-server_2.12-2.6.13-sources.jar">
+					<artifact name="play-akka-http-server_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="16770" time="0" location="/home/michal/.ivy2/cache/com.typesafe.play/play-akka-http-server_2.12/srcs/play-akka-http-server_2.12-2.6.13-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-akka-http-server_2.12/2.6.13/play-akka-http-server_2.12-2.6.13-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -598,7 +590,7 @@
 				<metadata-artifact status="no" details="" size="3730" time="0" location="/home/michal/.ivy2/cache/com.typesafe.akka/akka-http-core_2.12/ivy-10.0.13.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-http-core_2.12/10.0.13/akka-http-core_2.12-10.0.13.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="10.0.13" rev-constraint-default="10.0.13" rev-constraint-dynamic="10.0.13" callerrev="2.6.x" extra-info.apiURL="http://doc.akka.io/api/akka-http/10.0.13/"/>
 				<artifacts>
-					<artifact name="akka-http-core_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="411617" time="3486" location="/home/michal/.ivy2/cache/com.typesafe.akka/akka-http-core_2.12/srcs/akka-http-core_2.12-10.0.13-sources.jar">
+					<artifact name="akka-http-core_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="411617" time="0" location="/home/michal/.ivy2/cache/com.typesafe.akka/akka-http-core_2.12/srcs/akka-http-core_2.12-10.0.13-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-http-core_2.12/10.0.13/akka-http-core_2.12-10.0.13-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -610,7 +602,7 @@
 				<metadata-artifact status="no" details="" size="3108" time="0" location="/home/michal/.ivy2/cache/com.typesafe.akka/akka-parsing_2.12/ivy-10.0.13.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-parsing_2.12/10.0.13/akka-parsing_2.12-10.0.13.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="10.0.13" rev-constraint-default="10.0.13" rev-constraint-dynamic="10.0.13" callerrev="2.6.x" extra-info.apiURL="http://doc.akka.io/api/akka-http/10.0.13/"/>
 				<artifacts>
-					<artifact name="akka-parsing_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="63785" time="806" location="/home/michal/.ivy2/cache/com.typesafe.akka/akka-parsing_2.12/srcs/akka-parsing_2.12-10.0.13-sources.jar">
+					<artifact name="akka-parsing_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="63785" time="0" location="/home/michal/.ivy2/cache/com.typesafe.akka/akka-parsing_2.12/srcs/akka-parsing_2.12-10.0.13-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-parsing_2.12/10.0.13/akka-parsing_2.12-10.0.13-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -622,7 +614,7 @@
 				<metadata-artifact status="no" details="" size="3540" time="0" location="/home/michal/.ivy2/cache/com.typesafe.play/play-server_2.12/ivy-2.6.13.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-server_2.12/2.6.13/play-server_2.12-2.6.13.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="2.6.13" rev-constraint-default="2.6.13" rev-constraint-dynamic="2.6.13" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="play-server_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="40103" time="1219" location="/home/michal/.ivy2/cache/com.typesafe.play/play-server_2.12/srcs/play-server_2.12-2.6.13-sources.jar">
+					<artifact name="play-server_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="40103" time="0" location="/home/michal/.ivy2/cache/com.typesafe.play/play-server_2.12/srcs/play-server_2.12-2.6.13-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-server_2.12/2.6.13/play-server_2.12-2.6.13-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -634,7 +626,7 @@
 				<metadata-artifact status="no" details="" size="3600" time="0" location="/home/michal/.ivy2/cache/com.typesafe.play/play-guice_2.12/ivy-2.6.13.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-guice_2.12/2.6.13/play-guice_2.12-2.6.13.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="2.6.13" rev-constraint-default="2.6.13" rev-constraint-dynamic="2.6.13" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="play-guice_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="17580" time="1003" location="/home/michal/.ivy2/cache/com.typesafe.play/play-guice_2.12/srcs/play-guice_2.12-2.6.13-sources.jar">
+					<artifact name="play-guice_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="17580" time="0" location="/home/michal/.ivy2/cache/com.typesafe.play/play-guice_2.12/srcs/play-guice_2.12-2.6.13-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-guice_2.12/2.6.13/play-guice_2.12-2.6.13-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -646,7 +638,7 @@
 				<metadata-artifact status="no" details="" size="5305" time="0" location="/home/michal/.ivy2/cache/com.google.inject.extensions/guice-assistedinject/ivy-4.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/inject/extensions/guice-assistedinject/4.1.0/guice-assistedinject-4.1.0.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="4.1.0" rev-constraint-default="4.1.0" rev-constraint-dynamic="4.1.0" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="guice-assistedinject" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="34008" time="1247" location="/home/michal/.ivy2/cache/com.google.inject.extensions/guice-assistedinject/srcs/guice-assistedinject-4.1.0-sources.jar">
+					<artifact name="guice-assistedinject" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="34008" time="0" location="/home/michal/.ivy2/cache/com.google.inject.extensions/guice-assistedinject/srcs/guice-assistedinject-4.1.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/inject/extensions/guice-assistedinject/4.1.0/guice-assistedinject-4.1.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -658,7 +650,7 @@
 				<metadata-artifact status="no" details="" size="5652" time="0" location="/home/michal/.ivy2/cache/com.google.inject/guice/ivy-4.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/inject/guice/4.1.0/guice-4.1.0.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="4.1.0" rev-constraint-default="4.1.0" rev-constraint-dynamic="4.1.0" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="guice" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="310663" time="3456" location="/home/michal/.ivy2/cache/com.google.inject/guice/srcs/guice-4.1.0-sources.jar">
+					<artifact name="guice" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="310663" time="0" location="/home/michal/.ivy2/cache/com.google.inject/guice/srcs/guice-4.1.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/inject/guice/4.1.0/guice-4.1.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -670,7 +662,7 @@
 				<metadata-artifact status="no" details="" size="2417" time="0" location="/home/michal/.ivy2/cache/aopalliance/aopalliance/ivy-1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="aopalliance" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="21188" time="1930" location="/home/michal/.ivy2/cache/aopalliance/aopalliance/srcs/aopalliance-1.0-sources.jar">
+					<artifact name="aopalliance" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="21188" time="0" location="/home/michal/.ivy2/cache/aopalliance/aopalliance/srcs/aopalliance-1.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -682,7 +674,7 @@
 				<metadata-artifact status="no" details="" size="7731" time="0" location="/home/michal/.ivy2/cache/com.typesafe.play/play_2.12/ivy-2.6.13.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play_2.12/2.6.13/play_2.12-2.6.13.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="2.6.13" rev-constraint-default="2.6.13" rev-constraint-dynamic="2.6.13" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="play_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="456639" time="8966" location="/home/michal/.ivy2/cache/com.typesafe.play/play_2.12/srcs/play_2.12-2.6.13-sources.jar">
+					<artifact name="play_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="456639" time="0" location="/home/michal/.ivy2/cache/com.typesafe.play/play_2.12/srcs/play_2.12-2.6.13-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play_2.12/2.6.13/play_2.12-2.6.13-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -694,7 +686,7 @@
 				<metadata-artifact status="no" details="" size="2929" time="0" location="/home/michal/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.12/ivy-1.0.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.0.6/scala-parser-combinators_2.12-1.0.6.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="1.0.6" rev-constraint-default="1.0.6" rev-constraint-dynamic="1.0.6" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="scala-parser-combinators_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="43802" time="1440" location="/home/michal/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.12/srcs/scala-parser-combinators_2.12-1.0.6-sources.jar">
+					<artifact name="scala-parser-combinators_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="43802" time="0" location="/home/michal/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.12/srcs/scala-parser-combinators_2.12-1.0.6-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.0.6/scala-parser-combinators_2.12-1.0.6-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -706,7 +698,7 @@
 				<metadata-artifact status="no" details="" size="2637" time="0" location="/home/michal/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.12.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.4/scala-reflect-2.12.4.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="2.6.x" extra-info.apiURL="http://www.scala-lang.org/api/2.12.4/"/>
 				<artifacts>
-					<artifact name="scala-reflect" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="582957" time="4788" location="/home/michal/.ivy2/cache/org.scala-lang/scala-reflect/srcs/scala-reflect-2.12.4-sources.jar">
+					<artifact name="scala-reflect" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="582957" time="0" location="/home/michal/.ivy2/cache/org.scala-lang/scala-reflect/srcs/scala-reflect-2.12.4-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.4/scala-reflect-2.12.4-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -718,7 +710,7 @@
 				<metadata-artifact status="no" details="" size="2506" time="0" location="/home/michal/.ivy2/cache/javax.inject/javax.inject/ivy-1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="1" rev-constraint-default="1" rev-constraint-dynamic="1" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="javax.inject" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="10928" time="1365" location="/home/michal/.ivy2/cache/javax.inject/javax.inject/srcs/javax.inject-1-sources.jar">
+					<artifact name="javax.inject" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="10928" time="0" location="/home/michal/.ivy2/cache/javax.inject/javax.inject/srcs/javax.inject-1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -729,7 +721,7 @@
 				<metadata-artifact status="no" details="" size="2479" time="0" location="/home/michal/.ivy2/cache/javax.transaction/jta/ivy-1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/transaction/jta/1.1/jta-1.1.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="jta" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="25014" time="1469" location="/home/michal/.ivy2/cache/javax.transaction/jta/srcs/jta-1.1-sources.jar">
+					<artifact name="jta" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="25014" time="0" location="/home/michal/.ivy2/cache/javax.transaction/jta/srcs/jta-1.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/transaction/jta/1.1/jta-1.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -741,7 +733,7 @@
 				<metadata-artifact status="no" details="" size="13392" time="0" location="/home/michal/.ivy2/cache/org.apache.commons/commons-lang3/ivy-3.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.6/commons-lang3-3.6.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="3.6" rev-constraint-default="3.6" rev-constraint-dynamic="3.6" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="commons-lang3" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="543262" time="6604" location="/home/michal/.ivy2/cache/org.apache.commons/commons-lang3/srcs/commons-lang3-3.6-sources.jar">
+					<artifact name="commons-lang3" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="543262" time="0" location="/home/michal/.ivy2/cache/org.apache.commons/commons-lang3/srcs/commons-lang3-3.6-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.6/commons-lang3-3.6-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -753,7 +745,7 @@
 				<metadata-artifact status="no" details="" size="5618" time="0" location="/home/michal/.ivy2/cache/io.jsonwebtoken/jjwt/ivy-0.7.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/jsonwebtoken/jjwt/0.7.0/jjwt-0.7.0.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="0.7.0" rev-constraint-default="0.7.0" rev-constraint-dynamic="0.7.0" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="jjwt" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="110342" time="3234" location="/home/michal/.ivy2/cache/io.jsonwebtoken/jjwt/srcs/jjwt-0.7.0-sources.jar">
+					<artifact name="jjwt" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="110342" time="0" location="/home/michal/.ivy2/cache/io.jsonwebtoken/jjwt/srcs/jjwt-0.7.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/jsonwebtoken/jjwt/0.7.0/jjwt-0.7.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -765,7 +757,7 @@
 				<metadata-artifact status="no" details="" size="7244" time="0" location="/home/michal/.ivy2/cache/com.google.guava/guava/ivy-22.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/guava/guava/22.0/guava-22.0.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="22.0" rev-constraint-default="22.0" rev-constraint-dynamic="22.0" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="guava" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="1527071" time="2534" location="/home/michal/.ivy2/cache/com.google.guava/guava/srcs/guava-22.0-sources.jar">
+					<artifact name="guava" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1527071" time="0" location="/home/michal/.ivy2/cache/com.google.guava/guava/srcs/guava-22.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/guava/guava/22.0/guava-22.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -777,7 +769,7 @@
 				<metadata-artifact status="no" details="" size="4565" time="0" location="/home/michal/.ivy2/cache/org.codehaus.mojo/animal-sniffer-annotations/ivy-1.14.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="1.14" rev-constraint-default="1.14" rev-constraint-dynamic="1.14" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="animal-sniffer-annotations" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="1862" time="874" location="/home/michal/.ivy2/cache/org.codehaus.mojo/animal-sniffer-annotations/srcs/animal-sniffer-annotations-1.14-sources.jar">
+					<artifact name="animal-sniffer-annotations" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1862" time="0" location="/home/michal/.ivy2/cache/org.codehaus.mojo/animal-sniffer-annotations/srcs/animal-sniffer-annotations-1.14-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -789,7 +781,7 @@
 				<metadata-artifact status="no" details="" size="3174" time="0" location="/home/michal/.ivy2/cache/com.google.j2objc/j2objc-annotations/ivy-1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="j2objc-annotations" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="10481" time="2370" location="/home/michal/.ivy2/cache/com.google.j2objc/j2objc-annotations/srcs/j2objc-annotations-1.1-sources.jar">
+					<artifact name="j2objc-annotations" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="10481" time="0" location="/home/michal/.ivy2/cache/com.google.j2objc/j2objc-annotations/srcs/j2objc-annotations-1.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -801,7 +793,7 @@
 				<metadata-artifact status="no" details="" size="4020" time="0" location="/home/michal/.ivy2/cache/com.google.errorprone/error_prone_annotations/ivy-2.0.18.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/errorprone/error_prone_annotations/2.0.18/error_prone_annotations-2.0.18.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="2.0.18" rev-constraint-default="2.0.18" rev-constraint-dynamic="2.0.18" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="error_prone_annotations" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="22892" time="1157" location="/home/michal/.ivy2/cache/com.google.errorprone/error_prone_annotations/srcs/error_prone_annotations-2.0.18-sources.jar">
+					<artifact name="error_prone_annotations" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="22892" time="0" location="/home/michal/.ivy2/cache/com.google.errorprone/error_prone_annotations/srcs/error_prone_annotations-2.0.18-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/errorprone/error_prone_annotations/2.0.18/error_prone_annotations-2.0.18-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -813,7 +805,7 @@
 				<metadata-artifact status="no" details="" size="4852" time="0" location="/home/michal/.ivy2/cache/com.typesafe.play/play-json_2.12/ivy-2.6.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-json_2.12/2.6.9/play-json_2.12-2.6.9.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="2.6.9" rev-constraint-default="2.6.9" rev-constraint-dynamic="2.6.9" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="play-json_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="48475" time="2879" location="/home/michal/.ivy2/cache/com.typesafe.play/play-json_2.12/srcs/play-json_2.12-2.6.9-sources.jar">
+					<artifact name="play-json_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="48475" time="0" location="/home/michal/.ivy2/cache/com.typesafe.play/play-json_2.12/srcs/play-json_2.12-2.6.9-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-json_2.12/2.6.9/play-json_2.12-2.6.9-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -825,7 +817,7 @@
 				<metadata-artifact status="no" details="" size="6647" time="0" location="/home/michal/.ivy2/cache/joda-time/joda-time/ivy-2.9.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/joda-time/joda-time/2.9.9/joda-time-2.9.9.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="2.9.9" rev-constraint-default="2.9.9" rev-constraint-dynamic="2.9.9" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="joda-time" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="778815" time="5017" location="/home/michal/.ivy2/cache/joda-time/joda-time/srcs/joda-time-2.9.9-sources.jar">
+					<artifact name="joda-time" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="778815" time="0" location="/home/michal/.ivy2/cache/joda-time/joda-time/srcs/joda-time-2.9.9-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/joda-time/joda-time/2.9.9/joda-time-2.9.9-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -837,7 +829,7 @@
 				<metadata-artifact status="no" details="" size="2964" time="0" location="/home/michal/.ivy2/cache/org.typelevel/macro-compat_2.12/ivy-1.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/typelevel/macro-compat_2.12/1.1.1/macro-compat_2.12-1.1.1.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="macro-compat_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="1052" time="1010" location="/home/michal/.ivy2/cache/org.typelevel/macro-compat_2.12/srcs/macro-compat_2.12-1.1.1-sources.jar">
+					<artifact name="macro-compat_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1052" time="0" location="/home/michal/.ivy2/cache/org.typelevel/macro-compat_2.12/srcs/macro-compat_2.12-1.1.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/typelevel/macro-compat_2.12/1.1.1/macro-compat_2.12-1.1.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -849,7 +841,7 @@
 				<metadata-artifact status="no" details="" size="2685" time="0" location="/home/michal/.ivy2/cache/com.typesafe.play/play-functional_2.12/ivy-2.6.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-functional_2.12/2.6.9/play-functional_2.12-2.6.9.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="2.6.9" rev-constraint-default="2.6.9" rev-constraint-dynamic="2.6.9" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="play-functional_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="9833" time="579" location="/home/michal/.ivy2/cache/com.typesafe.play/play-functional_2.12/srcs/play-functional_2.12-2.6.9-sources.jar">
+					<artifact name="play-functional_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="9833" time="0" location="/home/michal/.ivy2/cache/com.typesafe.play/play-functional_2.12/srcs/play-functional_2.12-2.6.9-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-functional_2.12/2.6.9/play-functional_2.12-2.6.9-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -861,7 +853,7 @@
 				<metadata-artifact status="no" details="" size="10608" time="0" location="/home/michal/.ivy2/cache/commons-codec/commons-codec/ivy-1.10.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-codec/commons-codec/1.10/commons-codec-1.10.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="1.10" rev-constraint-default="1.10" rev-constraint-dynamic="1.10" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="commons-codec" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="301032" time="2498" location="/home/michal/.ivy2/cache/commons-codec/commons-codec/srcs/commons-codec-1.10-sources.jar">
+					<artifact name="commons-codec" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="301032" time="0" location="/home/michal/.ivy2/cache/commons-codec/commons-codec/srcs/commons-codec-1.10-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-codec/commons-codec/1.10/commons-codec-1.10-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -873,7 +865,7 @@
 				<metadata-artifact status="no" details="" size="21275" time="0" location="/home/michal/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/ivy-2.8.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.8.11/jackson-datatype-jsr310-2.8.11.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="2.8.11" rev-constraint-default="2.8.11" rev-constraint-dynamic="2.8.11" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="jackson-datatype-jsr310" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="62125" time="1837" location="/home/michal/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/srcs/jackson-datatype-jsr310-2.8.11-sources.jar">
+					<artifact name="jackson-datatype-jsr310" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="62125" time="0" location="/home/michal/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/srcs/jackson-datatype-jsr310-2.8.11-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.8.11/jackson-datatype-jsr310-2.8.11-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -885,7 +877,7 @@
 				<metadata-artifact status="no" details="" size="20981" time="0" location="/home/michal/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/ivy-2.8.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.8.11/jackson-datatype-jdk8-2.8.11.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="2.8.11" rev-constraint-default="2.8.11" rev-constraint-dynamic="2.8.11" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="jackson-datatype-jdk8" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="20301" time="1071" location="/home/michal/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/srcs/jackson-datatype-jdk8-2.8.11-sources.jar">
+					<artifact name="jackson-datatype-jdk8" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="20301" time="0" location="/home/michal/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/srcs/jackson-datatype-jdk8-2.8.11-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.8.11/jackson-datatype-jdk8-2.8.11-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -897,7 +889,7 @@
 				<metadata-artifact status="no" details="" size="8158" time="0" location="/home/michal/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/ivy-2.8.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.8.11/jackson-databind-2.8.11.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="2.8.11" rev-constraint-default="2.8.11" rev-constraint-dynamic="2.8.11" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="jackson-databind" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="927568" time="9807" location="/home/michal/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/srcs/jackson-databind-2.8.11-sources.jar">
+					<artifact name="jackson-databind" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="927568" time="0" location="/home/michal/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/srcs/jackson-databind-2.8.11-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.8.11/jackson-databind-2.8.11-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -909,7 +901,7 @@
 				<metadata-artifact status="no" details="" size="6970" time="0" location="/home/michal/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/ivy-2.8.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.8.11/jackson-annotations-2.8.11.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="2.8.11" rev-constraint-default="2.8.11" rev-constraint-dynamic="2.8.11" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="jackson-annotations" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="57660" time="1364" location="/home/michal/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/srcs/jackson-annotations-2.8.11-sources.jar">
+					<artifact name="jackson-annotations" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="57660" time="0" location="/home/michal/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/srcs/jackson-annotations-2.8.11-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.8.11/jackson-annotations-2.8.11-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -921,7 +913,7 @@
 				<metadata-artifact status="no" details="" size="3347" time="0" location="/home/michal/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.12/ivy-2.5.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.12/2.5.11/akka-slf4j_2.12-2.5.11.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="2.5.11" rev-constraint-default="2.5.11" rev-constraint-dynamic="2.5.11" callerrev="2.6.x" extra-info.apiURL="http://doc.akka.io/api/akka/2.5.11"/>
 				<artifacts>
-					<artifact name="akka-slf4j_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="2519" time="1408" location="/home/michal/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.12/srcs/akka-slf4j_2.12-2.5.11-sources.jar">
+					<artifact name="akka-slf4j_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="2519" time="0" location="/home/michal/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.12/srcs/akka-slf4j_2.12-2.5.11-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.12/2.5.11/akka-slf4j_2.12-2.5.11-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -933,7 +925,7 @@
 				<metadata-artifact status="no" details="" size="2942" time="0" location="/home/michal/.ivy2/cache/com.typesafe.play/twirl-api_2.12/ivy-1.3.14.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/twirl-api_2.12/1.3.14/twirl-api_2.12-1.3.14.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="1.3.14" rev-constraint-default="1.3.14" rev-constraint-dynamic="1.3.14" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="twirl-api_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="9387" time="863" location="/home/michal/.ivy2/cache/com.typesafe.play/twirl-api_2.12/srcs/twirl-api_2.12-1.3.14-sources.jar">
+					<artifact name="twirl-api_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="9387" time="0" location="/home/michal/.ivy2/cache/com.typesafe.play/twirl-api_2.12/srcs/twirl-api_2.12-1.3.14-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/twirl-api_2.12/1.3.14/twirl-api_2.12-1.3.14-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -957,7 +949,7 @@
 				<metadata-artifact status="no" details="" size="4090" time="0" location="/home/michal/.ivy2/cache/com.typesafe.play/play-streams_2.12/ivy-2.6.13.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-streams_2.12/2.6.13/play-streams_2.12-2.6.13.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="2.6.13" rev-constraint-default="2.6.13" rev-constraint-dynamic="2.6.13" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="play-streams_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="15354" time="905" location="/home/michal/.ivy2/cache/com.typesafe.play/play-streams_2.12/srcs/play-streams_2.12-2.6.13-sources.jar">
+					<artifact name="play-streams_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="15354" time="0" location="/home/michal/.ivy2/cache/com.typesafe.play/play-streams_2.12/srcs/play-streams_2.12-2.6.13-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-streams_2.12/2.6.13/play-streams_2.12-2.6.13-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -970,7 +962,7 @@
 				<metadata-artifact status="no" details="" size="10412" time="0" location="/home/michal/.ivy2/cache/ch.qos.logback/logback-classic/ivy-1.2.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="1.2.3" rev-constraint-default="1.2.3" rev-constraint-dynamic="1.2.3" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="logback-classic" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="230201" time="2235" location="/home/michal/.ivy2/cache/ch.qos.logback/logback-classic/srcs/logback-classic-1.2.3-sources.jar">
+					<artifact name="logback-classic" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="230201" time="0" location="/home/michal/.ivy2/cache/ch.qos.logback/logback-classic/srcs/logback-classic-1.2.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -983,7 +975,7 @@
 				<metadata-artifact status="no" details="" size="7917" time="0" location="/home/michal/.ivy2/cache/ch.qos.logback/logback-core/ivy-1.2.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="1.2.3" rev-constraint-default="1.2.3" rev-constraint-dynamic="1.2.3" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="logback-core" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="399141" time="3175" location="/home/michal/.ivy2/cache/ch.qos.logback/logback-core/srcs/logback-core-1.2.3-sources.jar">
+					<artifact name="logback-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="399141" time="0" location="/home/michal/.ivy2/cache/ch.qos.logback/logback-core/srcs/logback-core-1.2.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -995,7 +987,7 @@
 				<metadata-artifact status="no" details="" size="3292" time="0" location="/home/michal/.ivy2/cache/org.specs2/specs2-junit_2.12/ivy-3.8.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/specs2/specs2-junit_2.12/3.8.9/specs2-junit_2.12-3.8.9.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="3.8.9" rev-constraint-default="3.8.9" rev-constraint-dynamic="3.8.9" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="specs2-junit_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="9929" time="1449" location="/home/michal/.ivy2/cache/org.specs2/specs2-junit_2.12/srcs/specs2-junit_2.12-3.8.9-sources.jar">
+					<artifact name="specs2-junit_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="9929" time="0" location="/home/michal/.ivy2/cache/org.specs2/specs2-junit_2.12/srcs/specs2-junit_2.12-3.8.9-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/specs2/specs2-junit_2.12/3.8.9/specs2-junit_2.12-3.8.9-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1007,7 +999,7 @@
 				<metadata-artifact status="no" details="" size="3073" time="0" location="/home/michal/.ivy2/cache/org.specs2/specs2-mock_2.12/ivy-3.8.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/specs2/specs2-mock_2.12/3.8.9/specs2-mock_2.12-3.8.9.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="3.8.9" rev-constraint-default="3.8.9" rev-constraint-dynamic="3.8.9" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="specs2-mock_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="19014" time="985" location="/home/michal/.ivy2/cache/org.specs2/specs2-mock_2.12/srcs/specs2-mock_2.12-3.8.9-sources.jar">
+					<artifact name="specs2-mock_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="19014" time="0" location="/home/michal/.ivy2/cache/org.specs2/specs2-mock_2.12/srcs/specs2-mock_2.12-3.8.9-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/specs2/specs2-mock_2.12/3.8.9/specs2-mock_2.12-3.8.9-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1019,7 +1011,7 @@
 				<metadata-artifact status="no" details="" size="3265" time="0" location="/home/michal/.ivy2/cache/org.specs2/specs2-core_2.12/ivy-3.8.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/specs2/specs2-core_2.12/3.8.9/specs2-core_2.12-3.8.9.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="3.8.9" rev-constraint-default="3.8.9" rev-constraint-dynamic="3.8.9" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="specs2-core_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="104557" time="407" location="/home/michal/.ivy2/cache/org.specs2/specs2-core_2.12/srcs/specs2-core_2.12-3.8.9-sources.jar">
+					<artifact name="specs2-core_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="104557" time="0" location="/home/michal/.ivy2/cache/org.specs2/specs2-core_2.12/srcs/specs2-core_2.12-3.8.9-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/specs2/specs2-core_2.12/3.8.9/specs2-core_2.12-3.8.9-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1031,7 +1023,7 @@
 				<metadata-artifact status="no" details="" size="2794" time="0" location="/home/michal/.ivy2/cache/org.mockito/mockito-core/ivy-1.9.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/mockito/mockito-core/1.9.5/mockito-core-1.9.5.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="1.9.5" rev-constraint-default="1.9.5" rev-constraint-dynamic="1.9.5" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="mockito-core" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="723074" time="7804" location="/home/michal/.ivy2/cache/org.mockito/mockito-core/srcs/mockito-core-1.9.5-sources.jar">
+					<artifact name="mockito-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="723074" time="0" location="/home/michal/.ivy2/cache/org.mockito/mockito-core/srcs/mockito-core-1.9.5-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/mockito/mockito-core/1.9.5/mockito-core-1.9.5-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1043,7 +1035,7 @@
 				<metadata-artifact status="no" details="" size="2518" time="0" location="/home/michal/.ivy2/cache/org.objenesis/objenesis/ivy-1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/objenesis/objenesis/1.0/objenesis-1.0.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="objenesis" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="21547" time="1781" location="/home/michal/.ivy2/cache/org.objenesis/objenesis/srcs/objenesis-1.0-sources.jar">
+					<artifact name="objenesis" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="21547" time="0" location="/home/michal/.ivy2/cache/org.objenesis/objenesis/srcs/objenesis-1.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/objenesis/objenesis/1.0/objenesis-1.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1055,7 +1047,7 @@
 				<metadata-artifact status="no" details="" size="2800" time="0" location="/home/michal/.ivy2/cache/org.specs2/specs2-matcher_2.12/ivy-3.8.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/specs2/specs2-matcher_2.12/3.8.9/specs2-matcher_2.12-3.8.9.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="3.8.9" rev-constraint-default="3.8.9" rev-constraint-dynamic="3.8.9" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="specs2-matcher_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="65773" time="1179" location="/home/michal/.ivy2/cache/org.specs2/specs2-matcher_2.12/srcs/specs2-matcher_2.12-3.8.9-sources.jar">
+					<artifact name="specs2-matcher_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="65773" time="0" location="/home/michal/.ivy2/cache/org.specs2/specs2-matcher_2.12/srcs/specs2-matcher_2.12-3.8.9-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/specs2/specs2-matcher_2.12/3.8.9/specs2-matcher_2.12-3.8.9-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1067,7 +1059,7 @@
 				<metadata-artifact status="no" details="" size="3540" time="0" location="/home/michal/.ivy2/cache/org.specs2/specs2-common_2.12/ivy-3.8.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/specs2/specs2-common_2.12/3.8.9/specs2-common_2.12-3.8.9.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="3.8.9" rev-constraint-default="3.8.9" rev-constraint-dynamic="3.8.9" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="specs2-common_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="166643" time="1750" location="/home/michal/.ivy2/cache/org.specs2/specs2-common_2.12/srcs/specs2-common_2.12-3.8.9-sources.jar">
+					<artifact name="specs2-common_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="166643" time="0" location="/home/michal/.ivy2/cache/org.specs2/specs2-common_2.12/srcs/specs2-common_2.12-3.8.9-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/specs2/specs2-common_2.12/3.8.9/specs2-common_2.12-3.8.9-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1079,7 +1071,7 @@
 				<metadata-artifact status="no" details="" size="2790" time="0" location="/home/michal/.ivy2/cache/org.scalaz/scalaz-effect_2.12/ivy-7.2.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalaz/scalaz-effect_2.12/7.2.7/scalaz-effect_2.12-7.2.7.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="7.2.7" rev-constraint-default="7.2.7" rev-constraint-dynamic="7.2.7" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="scalaz-effect_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="22506" time="898" location="/home/michal/.ivy2/cache/org.scalaz/scalaz-effect_2.12/srcs/scalaz-effect_2.12-7.2.7-sources.jar">
+					<artifact name="scalaz-effect_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="22506" time="0" location="/home/michal/.ivy2/cache/org.scalaz/scalaz-effect_2.12/srcs/scalaz-effect_2.12-7.2.7-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalaz/scalaz-effect_2.12/7.2.7/scalaz-effect_2.12-7.2.7-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1091,7 +1083,7 @@
 				<metadata-artifact status="no" details="" size="2639" time="0" location="/home/michal/.ivy2/cache/org.scalaz/scalaz-core_2.12/ivy-7.2.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalaz/scalaz-core_2.12/7.2.7/scalaz-core_2.12-7.2.7.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="7.2.7" rev-constraint-default="7.2.7" rev-constraint-dynamic="7.2.7" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="scalaz-core_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="366513" time="3514" location="/home/michal/.ivy2/cache/org.scalaz/scalaz-core_2.12/srcs/scalaz-core_2.12-7.2.7-sources.jar">
+					<artifact name="scalaz-core_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="366513" time="0" location="/home/michal/.ivy2/cache/org.scalaz/scalaz-core_2.12/srcs/scalaz-core_2.12-7.2.7-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalaz/scalaz-core_2.12/7.2.7/scalaz-core_2.12-7.2.7-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1103,7 +1095,7 @@
 				<metadata-artifact status="no" details="" size="3539" time="0" location="/home/michal/.ivy2/cache/com.typesafe.akka/akka-stream_2.12/ivy-2.5.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-stream_2.12/2.5.11/akka-stream_2.12-2.5.11.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="2.5.11" rev-constraint-default="2.5.11" rev-constraint-dynamic="2.5.11" callerrev="2.6.x" extra-info.apiURL="http://doc.akka.io/api/akka/2.5.11"/>
 				<artifacts>
-					<artifact name="akka-stream_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="523481" time="4678" location="/home/michal/.ivy2/cache/com.typesafe.akka/akka-stream_2.12/srcs/akka-stream_2.12-2.5.11-sources.jar">
+					<artifact name="akka-stream_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="523481" time="0" location="/home/michal/.ivy2/cache/com.typesafe.akka/akka-stream_2.12/srcs/akka-stream_2.12-2.5.11-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-stream_2.12/2.5.11/akka-stream_2.12-2.5.11-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1115,7 +1107,7 @@
 				<metadata-artifact status="no" details="" size="2857" time="0" location="/home/michal/.ivy2/cache/com.typesafe/ssl-config-core_2.12/ivy-0.2.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/ssl-config-core_2.12/0.2.2/ssl-config-core_2.12-0.2.2.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="0.2.2" rev-constraint-default="0.2.2" rev-constraint-dynamic="0.2.2" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="ssl-config-core_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="49384" time="943" location="/home/michal/.ivy2/cache/com.typesafe/ssl-config-core_2.12/srcs/ssl-config-core_2.12-0.2.2-sources.jar">
+					<artifact name="ssl-config-core_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="49384" time="0" location="/home/michal/.ivy2/cache/com.typesafe/ssl-config-core_2.12/srcs/ssl-config-core_2.12-0.2.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/ssl-config-core_2.12/0.2.2/ssl-config-core_2.12-0.2.2-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1127,7 +1119,7 @@
 				<metadata-artifact status="no" details="" size="2810" time="0" location="/home/michal/.ivy2/cache/com.typesafe.akka/akka-protobuf_2.12/ivy-2.5.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-protobuf_2.12/2.5.11/akka-protobuf_2.12-2.5.11.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="2.5.11" rev-constraint-default="2.5.11" rev-constraint-dynamic="2.5.11" callerrev="2.6.x" extra-info.apiURL="http://doc.akka.io/api/akka/2.5.11"/>
 				<artifacts>
-					<artifact name="akka-protobuf_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="275262" time="1589" location="/home/michal/.ivy2/cache/com.typesafe.akka/akka-protobuf_2.12/srcs/akka-protobuf_2.12-2.5.11-sources.jar">
+					<artifact name="akka-protobuf_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="275262" time="0" location="/home/michal/.ivy2/cache/com.typesafe.akka/akka-protobuf_2.12/srcs/akka-protobuf_2.12-2.5.11-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-protobuf_2.12/2.5.11/akka-protobuf_2.12-2.5.11-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1139,7 +1131,7 @@
 				<metadata-artifact status="no" details="" size="3102" time="0" location="/home/michal/.ivy2/cache/com.typesafe.akka/akka-actor_2.12/ivy-2.5.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.12/2.5.11/akka-actor_2.12-2.5.11.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="2.5.11" rev-constraint-default="2.5.11" rev-constraint-dynamic="2.5.11" callerrev="2.6.x" extra-info.apiURL="http://doc.akka.io/api/akka/2.5.11"/>
 				<artifacts>
-					<artifact name="akka-actor_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="525185" time="4424" location="/home/michal/.ivy2/cache/com.typesafe.akka/akka-actor_2.12/srcs/akka-actor_2.12-2.5.11-sources.jar">
+					<artifact name="akka-actor_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="525185" time="0" location="/home/michal/.ivy2/cache/com.typesafe.akka/akka-actor_2.12/srcs/akka-actor_2.12-2.5.11-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.12/2.5.11/akka-actor_2.12-2.5.11-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1151,7 +1143,7 @@
 				<metadata-artifact status="no" details="" size="3036" time="0" location="/home/michal/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.12/ivy-0.8.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-java8-compat_2.12/0.8.0/scala-java8-compat_2.12-0.8.0.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="0.8.0" rev-constraint-default="0.8.0" rev-constraint-dynamic="0.8.0" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="scala-java8-compat_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="63853" time="1357" location="/home/michal/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.12/srcs/scala-java8-compat_2.12-0.8.0-sources.jar">
+					<artifact name="scala-java8-compat_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="63853" time="0" location="/home/michal/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.12/srcs/scala-java8-compat_2.12-0.8.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-java8-compat_2.12/0.8.0/scala-java8-compat_2.12-0.8.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1163,7 +1155,7 @@
 				<metadata-artifact status="no" details="" size="2875" time="0" location="/home/michal/.ivy2/cache/com.typesafe/config/ivy-1.3.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/config/1.3.2/config-1.3.2.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="1.3.2" rev-constraint-default="1.3.2" rev-constraint-dynamic="1.3.2" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="config" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="172766" time="1753" location="/home/michal/.ivy2/cache/com.typesafe/config/srcs/config-1.3.2-sources.jar">
+					<artifact name="config" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="172766" time="0" location="/home/michal/.ivy2/cache/com.typesafe/config/srcs/config-1.3.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/config/1.3.2/config-1.3.2-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1175,7 +1167,7 @@
 				<metadata-artifact status="no" details="" size="2865" time="0" location="/home/michal/.ivy2/cache/com.novocode/junit-interface/ivy-0.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/novocode/junit-interface/0.11/junit-interface-0.11.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="0.11" rev-constraint-default="0.11" rev-constraint-dynamic="0.11" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="junit-interface" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="15834" time="1051" location="/home/michal/.ivy2/cache/com.novocode/junit-interface/srcs/junit-interface-0.11-sources.jar">
+					<artifact name="junit-interface" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="15834" time="0" location="/home/michal/.ivy2/cache/com.novocode/junit-interface/srcs/junit-interface-0.11-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/novocode/junit-interface/0.11/junit-interface-0.11-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1187,7 +1179,7 @@
 				<metadata-artifact status="no" details="" size="2589" time="0" location="/home/michal/.ivy2/cache/org.scala-sbt/test-interface/ivy-1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-sbt/test-interface/1.0/test-interface-1.0.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="test-interface" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="18792" time="939" location="/home/michal/.ivy2/cache/org.scala-sbt/test-interface/srcs/test-interface-1.0-sources.jar">
+					<artifact name="test-interface" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="18792" time="0" location="/home/michal/.ivy2/cache/org.scala-sbt/test-interface/srcs/test-interface-1.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-sbt/test-interface/1.0/test-interface-1.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1199,7 +1191,7 @@
 				<metadata-artifact status="no" details="" size="2523" time="0" location="/home/michal/.ivy2/cache/org.reactivestreams/reactive-streams/ivy-1.0.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="1.0.2" rev-constraint-default="1.0.2" rev-constraint-dynamic="1.0.2" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="reactive-streams" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="3997" time="817" location="/home/michal/.ivy2/cache/org.reactivestreams/reactive-streams/srcs/reactive-streams-1.0.2-sources.jar">
+					<artifact name="reactive-streams" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="3997" time="0" location="/home/michal/.ivy2/cache/org.reactivestreams/reactive-streams/srcs/reactive-streams-1.0.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1211,7 +1203,7 @@
 				<metadata-artifact status="no" details="" size="2937" time="0" location="/home/michal/.ivy2/cache/com.typesafe.play/play-netty-utils/ivy-2.6.13.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-netty-utils/2.6.13/play-netty-utils-2.6.13.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="2.6.13" rev-constraint-default="2.6.13" rev-constraint-dynamic="2.6.13" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="play-netty-utils" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="19278" time="1380" location="/home/michal/.ivy2/cache/com.typesafe.play/play-netty-utils/srcs/play-netty-utils-2.6.13-sources.jar">
+					<artifact name="play-netty-utils" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="19278" time="0" location="/home/michal/.ivy2/cache/com.typesafe.play/play-netty-utils/srcs/play-netty-utils-2.6.13-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-netty-utils/2.6.13/play-netty-utils-2.6.13-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1223,7 +1215,7 @@
 				<metadata-artifact status="no" details="" size="5267" time="0" location="/home/michal/.ivy2/cache/org.slf4j/jcl-over-slf4j/ivy-1.7.25.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/1.7.25/jcl-over-slf4j-1.7.25.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="1.7.25" rev-constraint-default="1.7.25" rev-constraint-dynamic="1.7.25" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="jcl-over-slf4j" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="23239" time="2496" location="/home/michal/.ivy2/cache/org.slf4j/jcl-over-slf4j/srcs/jcl-over-slf4j-1.7.25-sources.jar">
+					<artifact name="jcl-over-slf4j" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="23239" time="0" location="/home/michal/.ivy2/cache/org.slf4j/jcl-over-slf4j/srcs/jcl-over-slf4j-1.7.25-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/1.7.25/jcl-over-slf4j-1.7.25-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1235,7 +1227,7 @@
 				<metadata-artifact status="no" details="" size="5254" time="0" location="/home/michal/.ivy2/cache/org.slf4j/jul-to-slf4j/ivy-1.7.25.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/jul-to-slf4j/1.7.25/jul-to-slf4j-1.7.25.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="1.7.25" rev-constraint-default="1.7.25" rev-constraint-dynamic="1.7.25" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="jul-to-slf4j" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="4872" time="995" location="/home/michal/.ivy2/cache/org.slf4j/jul-to-slf4j/srcs/jul-to-slf4j-1.7.25-sources.jar">
+					<artifact name="jul-to-slf4j" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="4872" time="0" location="/home/michal/.ivy2/cache/org.slf4j/jul-to-slf4j/srcs/jul-to-slf4j-1.7.25-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/jul-to-slf4j/1.7.25/jul-to-slf4j-1.7.25-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1247,7 +1239,7 @@
 				<metadata-artifact status="no" details="" size="5377" time="0" location="/home/michal/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.25.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="1.7.25" rev-constraint-default="1.7.25" rev-constraint-dynamic="1.7.25" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="slf4j-api" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="55539" time="3538" location="/home/michal/.ivy2/cache/org.slf4j/slf4j-api/srcs/slf4j-api-1.7.25-sources.jar">
+					<artifact name="slf4j-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="55539" time="0" location="/home/michal/.ivy2/cache/org.slf4j/slf4j-api/srcs/slf4j-api-1.7.25-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1259,7 +1251,7 @@
 				<metadata-artifact status="no" details="" size="2649" time="0" location="/home/michal/.ivy2/cache/com.typesafe.play/build-link/ivy-2.6.13.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/build-link/2.6.13/build-link-2.6.13.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="2.6.13" rev-constraint-default="2.6.13" rev-constraint-dynamic="2.6.13" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="build-link" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="4246" time="916" location="/home/michal/.ivy2/cache/com.typesafe.play/build-link/srcs/build-link-2.6.13-sources.jar">
+					<artifact name="build-link" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="4246" time="0" location="/home/michal/.ivy2/cache/com.typesafe.play/build-link/srcs/build-link-2.6.13-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/build-link/2.6.13/build-link-2.6.13-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1271,7 +1263,7 @@
 				<metadata-artifact status="no" details="" size="2479" time="0" location="/home/michal/.ivy2/cache/com.typesafe.play/play-exceptions/ivy-2.6.13.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-exceptions/2.6.13/play-exceptions-2.6.13.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="2.6.13" rev-constraint-default="2.6.13" rev-constraint-dynamic="2.6.13" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="play-exceptions" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="2372" time="1122" location="/home/michal/.ivy2/cache/com.typesafe.play/play-exceptions/srcs/play-exceptions-2.6.13-sources.jar">
+					<artifact name="play-exceptions" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="2372" time="0" location="/home/michal/.ivy2/cache/com.typesafe.play/play-exceptions/srcs/play-exceptions-2.6.13-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-exceptions/2.6.13/play-exceptions-2.6.13-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1283,7 +1275,7 @@
 				<metadata-artifact status="no" details="" size="2471" time="0" location="/home/michal/.ivy2/cache/org.scala-lang/scala-library/ivy-2.12.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.4/scala-library-2.12.4.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="2.6.x" extra-info.apiURL="http://www.scala-lang.org/api/2.12.4/"/>
 				<artifacts>
-					<artifact name="scala-library" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="991177" time="7235" location="/home/michal/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.4-sources.jar">
+					<artifact name="scala-library" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="991177" time="0" location="/home/michal/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.4-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.4/scala-library-2.12.4-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1295,7 +1287,7 @@
 				<metadata-artifact status="no" details="" size="7424" time="0" location="/home/michal/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/ivy-2.8.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.8.11/jackson-core-2.8.11.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="2.8.11" rev-constraint-default="2.8.11" rev-constraint-dynamic="2.8.11" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="jackson-core" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="294668" time="1258" location="/home/michal/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/srcs/jackson-core-2.8.11-sources.jar">
+					<artifact name="jackson-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="294668" time="0" location="/home/michal/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/srcs/jackson-core-2.8.11-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.8.11/jackson-core-2.8.11-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1307,7 +1299,7 @@
 				<metadata-artifact status="no" details="" size="3317" time="0" location="/home/michal/.ivy2/cache/junit/junit/ivy-4.12.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/junit/junit/4.12/junit-4.12.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="4.12" rev-constraint-default="4.12" rev-constraint-dynamic="4.12" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="junit" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="200355" time="2118" location="/home/michal/.ivy2/cache/junit/junit/srcs/junit-4.12-sources.jar">
+					<artifact name="junit" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="200355" time="0" location="/home/michal/.ivy2/cache/junit/junit/srcs/junit-4.12-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/junit/junit/4.12/junit-4.12-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -1319,7 +1311,7 @@
 				<metadata-artifact status="no" details="" size="2617" time="0" location="/home/michal/.ivy2/cache/org.hamcrest/hamcrest-core/ivy-1.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom"/>
 				<caller organisation="play-scala-slick-example" name="play-scala-slick-example$sources" conf="test, compile, runtime" rev="1.3" rev-constraint-default="1.3" rev-constraint-dynamic="1.3" callerrev="2.6.x"/>
 				<artifacts>
-					<artifact name="hamcrest-core" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="32624" time="366" location="/home/michal/.ivy2/cache/org.hamcrest/hamcrest-core/srcs/hamcrest-core-1.3-sources.jar">
+					<artifact name="hamcrest-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="32624" time="0" location="/home/michal/.ivy2/cache/org.hamcrest/hamcrest-core/srcs/hamcrest-core-1.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3-sources.jar"/>
 					</artifact>
 				</artifacts>

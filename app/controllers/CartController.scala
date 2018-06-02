@@ -1,11 +1,16 @@
 package controllers
 
-import scala.util.{Success, Failure}
+import java.util
+
+import scala.util.{Failure, Success}
 import javax.inject._
 import models._
 import play.api.mvc._
-import play.api.libs.json.Json
+import play.api.libs.json.{JsObject, JsString, Json}
+
+import scala.collection.mutable
 import scala.concurrent.{ExecutionContext, Future}
+import scala.collection.mutable.HashMap
 
 class CartController @Inject()(
                                  productsRepo: ProductRepository,
@@ -13,26 +18,6 @@ class CartController @Inject()(
                                  cc: MessagesControllerComponents
                                 )(implicit ec: ExecutionContext)
   extends MessagesAbstractController(cc) {
-
-
-  def getCartProducts(): Seq[Product] = {
-    var products: Seq[Product] = Seq[Product]()
-
-    var cartItems = cartRepo.list().onComplete {
-      case Success(cartItems) => {
-        for (item <- cartItems) {
-          productsRepo.getProductObjById(item.product_id).map {
-            product =>
-              products :+= product
-              println("in cart: " + products)
-          }
-        }
-        products
-      }
-      case Failure(_) => print("fail")
-    }
-    products
-  }
 
   val headers = (
     "Access-Control-Allow-Origin" -> "*",
@@ -42,43 +27,24 @@ class CartController @Inject()(
 
   def getCartItems = Action.async { implicit request =>
 
-    /*for {
-      firstRes <- cartRepo.list().map { cartItems =>
-        val productsIds: Seq[Long] = Seq()
-
-        for(cartItem <- cartItems) {
-          productsIds :+ cartItem.product_id
-        }
-
-        Ok(Json.obj("seq" -> productsIds))
-      }
-      secondRes <- firstRes match {
-        case res =>
-          val products: Seq[Product] = Seq()
-          println(res.body)
-          /*for(productId <- res.body) {
-            productsRepo.getProductObjById(productId).map { productInCart => products :+ productInCart }
-          }*/
-          Ok(Json.obj("res" -> products)).withHeaders(headers._1, headers._2, headers._3)
-      }
-    } yield secondRes*/
+    var counters: HashMap[Long, Int] = HashMap[Long, Int]()
 
     cartRepo.list().flatMap{ cartItems =>
-      Future {
-        var productsIds: List[Long] = List()
 
-        for (cartItem <- cartItems) {
-          productsIds = productsIds :+ cartItem.product_id
+      for(el <- cartItems) {
+        counters += (el.product_id -> el.quantity)
+      }
+
+      productsRepo.getProductsByIds(counters.keys.toList)
+    }.map { products => {
+
+        var res: List[JsObject] = List[JsObject]()
+
+        for(prod <- products) {
+          res :+= (Json.toJson(prod).as[JsObject] + ("quantity" -> JsString(counters.get(prod.id).get.toString)))
         }
 
-        println("in database: \t"+productsIds.length)
-        productsIds
-      }
-    }.flatMap { productsIdsSeq =>
-      productsRepo.getProductsByIds(productsIdsSeq)
-    }.map { products => {
-        println("in cart: \t\t"+products.length)
-        Ok(Json.obj("res" -> products)).withHeaders(headers._1, headers._2, headers._3)
+        Ok(Json.obj("res" -> res)).withHeaders(headers._1, headers._2, headers._3)
       }
     }
   }
@@ -86,16 +52,19 @@ class CartController @Inject()(
   def addCartItem = Action.async { implicit request =>
     val productId = request.body.asFormUrlEncoded.get("product_id").repr(0)
 
-    cartRepo.create(Cart(productId.toLong)).map { _ =>
-      Ok(Json.obj("res" -> productId)).withHeaders(headers._1, headers._2, headers._3)
+    cartRepo.create(Cart(productId.toLong, 1)).map { res =>
+      println(res)
+      Ok(Json.obj("res" -> res)).withHeaders(headers._1, headers._2, headers._3)
     }
   }
 
-  def deleteCartItem(product_id: Long) = Action.async { implicit request =>
+  def deleteCartItem() = Action.async { implicit request =>
+    val productId = request.body.asFormUrlEncoded.get("product_id").repr(0)
+    println("usuwam: " + productId)
 
-    cartRepo.delete(Cart(product_id)).map { _ =>
+    cartRepo.delete(productId.toLong).map { _ =>
       // If successful, we simply redirect to the index page.
-      Ok(Json.obj("res" -> true))
+      Ok(Json.obj("res" -> true)).withHeaders(headers._1, headers._2, headers._3)
     }
   }
 

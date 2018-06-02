@@ -36,7 +36,9 @@ class CategoryController @Inject()(
     categoryRepo.list().map(categories => Ok(Json.toJson(categories)).withHeaders(headers._1,headers._2,headers._3))
   }
 
-
+  def getCategoriesWithCounters = Action.async { implicit request =>
+    categoryRepo.listWithCounters().map(categories => Ok(Json.toJson(categories)).withHeaders(headers._1,headers._2,headers._3))
+  }
 
   def addCategory = Action.async { implicit request =>
 

@@ -4,6 +4,7 @@ import javax.inject.{Inject, Singleton}
 import play.api.db.slick.DatabaseConfigProvider
 import slick.jdbc.JdbcProfile
 
+import scala.collection.mutable
 import scala.concurrent.{ExecutionContext, Future}
 
 /**
@@ -21,50 +22,45 @@ class CartRepository @Inject()(dbConfigProvider: DatabaseConfigProvider)(implici
   import dbConfig._
   import profile.api._
 
-  /**
-    * Here we define the table. It will have a name of people
-    */
+
   class CartTable(tag: Tag) extends Table[Cart](tag, "cart") {
 
-    /** The ID column, which is the primary key, and auto incremented */
     def product_id = column[Long]("product_id")
+    def quantity = column[Int]("quantity")
 
-    /**
-      * This is the tables default "projection".
-      *
-      * It defines how the columns are converted to and from the Person object.
-      *
-      * In this case, we are simply passing the id, name and page parameters to the Person case classes
-      * apply and unapply methods.
-      */
-    def * = product_id <> ((Cart.apply _), Cart.unapply)
+    def * = (product_id , quantity) <> ((Cart.apply _).tupled, Cart.unapply)
 
   }
 
-  /**
-    * The starting point for all queries on the people table.
-    */
+
   val cart = TableQuery[CartTable]
 
 
+  def create(item: Cart): Future[Boolean] = {
+    db.run(cart.filter(_.product_id === item.product_id).exists.result).flatMap { exists =>
+      if(exists) {
+        //println(item.product_id + " exists!!")
 
-  /**
-    * Create a person with the given name and age.
-    *
-    * This is an asynchronous operation, it will return a future of the created person, which can be used to obtain the
-    * id for that person.
-    */
-  def create(item: Cart): Future[Cart] = {
-    db.run(cart += item).map(res => item)
-  }
+        /*val q = for { c <- cart if c.product_id == item.product_id } yield c.quantity
+        db.run(q.update(10)) // increment*/
 
-  def delete(item: Cart): Future[Int] = {
-    db.run(cart.filter(_.product_id === item.product_id).delete)
-  }
+        val id = item.product_id
 
-  def list(): Future[Seq[Cart]] = db.run {
-    cart.groupBy(_.product_id).map{
-      case (res) => res
+        val action = sql"update cart set quantity = (quantity+1) where product_id == $id".as[(String)]
+        db.run(action).map(res => true)
+      }
+      else {
+        //println(item.product_id + " not exists!!")
+        db.run(cart += item).map(res => true)
+      }
     }
+  }
+
+  def delete(product_id: Long): Future[Int] = {
+    db.run(cart.filter(_.product_id === product_id).delete)
+  }
+
+  def list():Future[Seq[Cart]] = {
+    db.run(cart.result)
   }
 }

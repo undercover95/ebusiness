@@ -57,7 +57,7 @@ Seq[Any](format.raw/*2.1*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Mon May 28 21:46:43 CEST 2018
+                  DATE: Sat Jun 02 18:37:17 CEST 2018
                   SOURCE: /home/michal/Desktop/ebiznes/play-products-crud-slick-master/app/views/main.scala.html
                   HASH: bb1bc3d75025341263350eabebb04f94ccea7dba
                   MATRIX: 733->1|857->32|884->33|961->84|986->89|1079->156|1093->162|1153->201|1268->289|1288->300|1344->335|1486->450|1514->457|1546->462

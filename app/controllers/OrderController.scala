@@ -50,14 +50,14 @@ class OrderController @Inject()(
     ordersRepo.create(Order(0)).map{ order =>
 
       // get all items in cart
-      cartRepo.list().map { items =>
+      /*cartRepo.list().map { items =>
         for(item <- items) {
           orderedProductsRepo.create(OrderedProduct(order.order_id, item.product_id))
 
           // delete from cart
           cartRepo.delete(item)
         }
-      }
+      }*/
 
       Redirect(routes.OrderController.getOrders()).flashing("success" -> "zamówienie złożone")
     }

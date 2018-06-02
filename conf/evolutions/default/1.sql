@@ -16,6 +16,7 @@ create table "product" (
 
 create table "cart" (
   "product_id" int not null,
+  "quantity" int default 0 not null,
   foreign key(product_id) references product(id)
 );
 
