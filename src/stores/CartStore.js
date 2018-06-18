@@ -19,6 +19,14 @@ class CartStore extends EventEmitter {
 
   serviceResultOfGetCartItems(response) {
     this.productsInCart = response.res;
+
+    let q = 0;
+    this.productsInCart.forEach(el => {
+      q += +el.quantity; // prevent errors
+    })
+
+    this.counter = q;
+
     this.emit('getCartItemsCompleted');
   }
 

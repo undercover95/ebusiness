@@ -93,7 +93,7 @@ export default class AddProductForm extends React.Component {
           </FormGroup>
           <FormGroup>
             <Label htmlFor='productDescription'>Opis produktu:</Label>
-            <Input id='productDescription' type='textarea' name='productDescription' className='form-control' placeholder='Wpisz opis produktu' required/>
+            <Input id='productDescription' type='textarea' name='productDescription' className='form-control' placeholder='Wpisz opis produktu' rows={5} required/>
           </FormGroup>
           <FormGroup>
             <Label htmlFor='productPrice'>Cena produktu:</Label>
@@ -108,6 +108,10 @@ export default class AddProductForm extends React.Component {
                 })
               }
             </Input>
+          </FormGroup>
+          <FormGroup>
+            <Label htmlFor='productImageUrl'>Adres URL do zdjęcia produktu:</Label>
+            <Input id='productImageUrl' type='text' name='productImageUrl' className='form-control' placeholder='Podaj adres URL zdjęcia'/>
           </FormGroup>
           <Button type='submit' color={'primary'}>Dodaj produkt</Button>
         </Form>

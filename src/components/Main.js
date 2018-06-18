@@ -3,11 +3,11 @@ import { Container, Row, Col } from 'reactstrap';
 
 import TopBar from './TopBar';
 import MainLayout from './MainLayout';
-import CategoryLayout from './CategoryLayout';
+import CategoryLayout from './categories/CategoryLayout';
 import AdminLayout from './admin/AdminLayout';
 import CartLayout from './cart/CartLayout';
+import ProductViewLayout from './products/ProductViewLayout';
 
-import Breadcrumbs from './Breadcrumbs';
 import Footer from './Footer';
 
 import {
@@ -21,16 +21,16 @@ class AppComponent extends React.Component {
     return (
       <Router>
         <Container>
-          <Row>
+          <Row className={'mb-4'}>
             <Col sm={12}>
               <TopBar />
-              <Breadcrumbs />
             </Col>
           </Row>
             <Route exact path={'/'} component={MainLayout} />
-            <Route path={'/category/:id'} exact component={CategoryLayout} />
+            <Route path={'/category/:id'} component={CategoryLayout} />
             <Route path={'/admin'} component={AdminLayout} />
-          <Route path={'/cart'} component={CartLayout} />
+            <Route path={'/cart'} component={CartLayout} />
+            <Route path={'/productView/:id'} exact component={ProductViewLayout} />
           <Row>
             <Col sm={12}>
               <Footer />

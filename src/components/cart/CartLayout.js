@@ -4,8 +4,6 @@ import { Button, Row, Col } from 'reactstrap';
 const axios = require('axios');
 
 import CartItem from './CartItem';
-import Categories from '../Categories';
-import ProductsList from '../ProductsList';
 import CartStore from "stores/CartStore";
 import * as CartActions from 'actions/CartActions';
 
@@ -37,7 +35,17 @@ export default class CartLayout extends React.Component {
     CartActions.getCartItems();
   }
 
+  deleteProductFromCart(product_id) {
+    CartActions.deleteProductFromCart(product_id);
+  }
 
+  getSummary() {
+    let sum = 0.0;
+    this.state.items.map(item => {
+      sum += (item.quantity * (item.price.toFixed(2)));
+    });
+    return sum.toFixed(2);
+  }
 
   render() {
     return (
@@ -48,19 +56,21 @@ export default class CartLayout extends React.Component {
             <thead>
             <tr>
               <th>Zdjęcie</th>
-              <th>Nazwa produktu i opis</th>
-              <th>Liczba sztuk</th>
+              <th>Nazwa produktu</th>
+              <th>Liczba szt.</th>
               <th>Cena</th>
               <th></th>
             </tr>
             </thead>
             <tbody>
               {this.state.items.map(item => {
-                return <CartItem key={item.id} itemData={item}/>
+                return <CartItem key={item.id} itemData={item} deleteProductFromCart={this.deleteProductFromCart.bind(this)} />
               })}
             </tbody>
           </table>
-          <Button className={'float-right'} color={'primary'}>Złóż zamówienie</Button>
+          <h4>Razem: {this.getSummary()}&nbsp;zł</h4>
+
+          <Button color={'primary'}>Złóż zamówienie</Button>
         </Col>
       </Row>
     );

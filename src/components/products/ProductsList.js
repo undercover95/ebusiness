@@ -2,7 +2,7 @@ import React from 'react';
 import FontAwesome from 'react-fontawesome';
 import { Container, Row, Col } from 'reactstrap';
 import ProductsListItem from './ProductsListItem';
-import Dispather from "../Dispatcher";
+import Dispather from "../../Dispatcher";
 
 import * as CategoriesActions from 'actions/CategoriesActions';
 import CategoriesStore from 'stores/CategoriesStore';

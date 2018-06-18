@@ -21,7 +21,8 @@ import {
   NavLink as Link
 } from 'react-router-dom';
 
-import CartStore from 'stores/CartStore';
+import TopBar_cartCounter from './TopBar_cartCounter';
+
 
 export default class TopBar extends React.Component {
   constructor(props) {
@@ -30,23 +31,7 @@ export default class TopBar extends React.Component {
     this.toggle = this.toggle.bind(this);
     this.state = {
       isOpen: false,
-      cartCounter: 0
     };
-    this.updateCartItemsCounter = this.updateCartItemsCounter.bind(this);
-  }
-
-  componentWillMount() {
-    CartStore.on('addProductToCartCompleted', this.updateCartItemsCounter);
-  }
-
-  componentWillUnmount() {
-    CartStore.removeListener('addProductToCartCompleted', this.updateCartItemsCounter);
-  }
-
-  updateCartItemsCounter() {
-    this.setState({
-      cartCounter: CartStore.getCounter()
-    })
   }
 
   toggle() {
@@ -54,7 +39,7 @@ export default class TopBar extends React.Component {
       isOpen: !this.state.isOpen
     });
   }
-  
+
   render() {
     return (
       <div>
@@ -64,7 +49,7 @@ export default class TopBar extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <Link activeClassName='active' className="nav-link" to="/cart"><FontAwesomeIcon icon={faShoppingCart} /> Mój koszyk <Badge color="secondary">{this.state.cartCounter}</Badge></Link>
+                <TopBar_cartCounter />
               </NavItem>
               <NavItem>
                 <Link activeClassName='active' className="nav-link" to="/register"><FontAwesomeIcon icon={faUserPlus} />  Zarejestruj się</Link>

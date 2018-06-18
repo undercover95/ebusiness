@@ -3,7 +3,7 @@ import React from 'react';
 import { Row, Col } from 'reactstrap';
 
 import Categories from './Categories';
-import ProductsList from './ProductsList';
+import ProductsList from '../products/ProductsList';
 
 export default class CategoryLayout extends React.Component {
 

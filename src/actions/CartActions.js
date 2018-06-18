@@ -36,4 +36,21 @@ export function getCartItems() {
   });
 }
 
+export function deleteProductFromCart(product_id) {
+
+  let prodData = qs.stringify({
+    product_id: product_id
+  });
+
+  axios({
+    method: 'post',
+    url: 'http://localhost:9090/deletecartitem',
+    data: prodData
+  }).then((res) => {
+    console.log('deleteProductFromCart AXIOS completed',res);
+    getCartItems() // refresh
+  }).catch((err) => {
+    console.log('AXIOS deleteProductFromCart FAILED', err)
+  });
+}
 
