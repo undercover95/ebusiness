@@ -34,7 +34,9 @@ class OpinionRepository @Inject()(dbConfigProvider: DatabaseConfigProvider)(impl
 
     def opinion = column[String]("opinion")
 
-    def * = (product_id, title, opinion) <> ((Opinion.apply _).tupled, Opinion.unapply)
+    def star_ratio = column[Int]("star_ratio")
+
+    def * = (product_id, title, opinion, star_ratio) <> ((Opinion.apply _).tupled, Opinion.unapply)
   }
 
 

@@ -1,6 +1,4 @@
-[error] /home/michal/Desktop/ebiznes/play-products-crud-slick-master/app/controllers/CategoryController.scala:45:31: type mismatch;
-[error]  found   : Vector[(Int, String, Int)]
-[error]  required: Seq[models.Category]
-[error]       case Success(cat) => a= cat
-[error]                               ^
-[error] one error found
+[warn] /home/michal/Desktop/ebiznes/play-products-crud-slick-master/app/models/ProductRepository.scala:6:15: imported `CategoryRepository' is permanently hidden by definition of class CategoryRepository in package models
+[warn] import models.CategoryRepository
+[warn]               ^
+[warn] one warning found

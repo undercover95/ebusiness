@@ -4,6 +4,7 @@
 
 # Products
 GET    /products/:cat_id            controllers.ProductController.getProducts(cat_id: Int)
+GET    /product/:prod_id            controllers.ProductController.getProductDataById(prod_id: Long)
 POST   /addproduct                  controllers.ProductController.addProduct
 POST   /deleteproduct/:id           controllers.ProductController.deleteProduct(id: Long)
 
@@ -26,7 +27,6 @@ POST    /makeorder                  controllers.OrderController.makeOrder
 
 
 # Opinions
-GET    /writeopinion/:product_id    controllers.OpinionController.writeOpinion(product_id: Long)
 POST   /addopinion/:product_id      controllers.OpinionController.addOpinion(product_id: Long)
 GET    /opinions/:product_id        controllers.OpinionController.getOpinions(product_id: Long)
 

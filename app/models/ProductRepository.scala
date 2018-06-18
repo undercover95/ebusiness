@@ -41,6 +41,8 @@ class ProductRepository @Inject() (dbConfigProvider: DatabaseConfigProvider, cat
 
     def price = column[Float]("price")
 
+    def image_url = column[String]("image_url", O.Default(""))
+
     def category_fk = foreignKey("cat_fk",category, cat)(_.id)
     /**
      * This is the tables default "projection".
@@ -50,8 +52,7 @@ class ProductRepository @Inject() (dbConfigProvider: DatabaseConfigProvider, cat
      * In this case, we are simply passing the id, name and page parameters to the Person case classes
      * apply and unapply methods.
      */
-    def * = (id, name, description, category, price) <> ((Product.apply _).tupled, Product.unapply)
-    //def * = (id, name) <> ((Category.apply _).tupled, Category.unapply)
+    def * = (id, name, description, category, price, image_url) <> ((Product.apply _).tupled, Product.unapply)
   }
 
   /**
@@ -71,16 +72,16 @@ class ProductRepository @Inject() (dbConfigProvider: DatabaseConfigProvider, cat
    * This is an asynchronous operation, it will return a future of the created person, which can be used to obtain the
    * id for that person.
    */
-  def create(name: String, description: String, category: Int, price: Float): Future[Product] = db.run {
+  def create(name: String, description: String, category: Int, price: Float, image_url: String): Future[Product] = db.run {
     // We create a projection of just the name and age columns, since we're not inserting a value for the id column
-    (product.map(p => (p.name, p.description,p.category, p.price))
+    (product.map(p => (p.name, p.description,p.category, p.price, p.image_url))
       // Now define it to return the id, because we want to know what id was generated for the person
       returning product.map(_.id)
       // And we define a transformation for the returned value, which combines our original parameters with the
       // returned id
-      into {case ((name,description,category, price),id) => Product(id,name, description,category, price)}
+      into {case ((name,description,category, price, image_url),id) => Product(id,name, description,category, price, image_url)}
     // And finally, insert the person into the database
-    ) += (name, description, category, price)
+    ) += (name, description, category, price, image_url)
   }
 
   def delete(prod_id: Long): Future[Int] = {

@@ -28,15 +28,10 @@ class ProductController @Inject()(
       "productName" -> nonEmptyText,
       "productDescription" -> nonEmptyText,
       "productCategory" -> number,
-      "productPrice" -> nonEmptyText
+      "productPrice" -> nonEmptyText,
+      "productImageUrl" -> nonEmptyText
     )(CreateProductForm.apply)(CreateProductForm.unapply)
   }
-
-/*
-  def addProduct = Action.async { implicit request =>
-    Ok(views.html.addproduct())
-  }
-*/
 
   val headers = (
     "Access-Control-Allow-Origin" -> "*",
@@ -56,13 +51,19 @@ class ProductController @Inject()(
         )
       },
       product => {
-        productsRepo.create(product.name, product.description, product.category, product.price.toFloat).map { _ =>
+        productsRepo.create(product.name, product.description, product.category, product.price.toFloat, product.image_url).map { _ =>
           Ok(Json.obj("result" -> true)).withHeaders(headers._1,headers._2,headers._3)
         }
       }
     )
   }
 
+
+  def getProductDataById(prod_id: Long) = Action.async { implicit request =>
+    productsRepo.getProductObjById(prod_id).map { product =>
+      Ok(Json.toJson(product)).withHeaders(headers._1,headers._2,headers._3)
+    }
+  }
 
   def getProducts(cat_id: Int) = Action.async { implicit request =>
     productsRepo.listByCategory(cat_id).map { products =>
@@ -80,6 +81,6 @@ class ProductController @Inject()(
 
 }
 
-case class CreateProductForm(name: String, description: String, category: Int, price: String)
+case class CreateProductForm(name: String, description: String, category: Int, price: String, image_url: String)
 
 

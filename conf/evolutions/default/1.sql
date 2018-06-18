@@ -11,6 +11,7 @@ create table "product" (
   "description" text not null,
   "category" int not null,
   "price" decimal(4,2) not null,
+  "image_url" varchar not null default "",
   foreign key(category) references category(id)
 );
 
@@ -35,6 +36,7 @@ create table "opinions" (
   "product_id" int not null,
   "title" varchar(100) not null,
   "opinion" varchar(300) not null,
+  "star_ratio" smallint not null default 0,
   foreign key(product_id) references product(id)
 );
 

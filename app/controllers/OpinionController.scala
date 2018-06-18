@@ -24,30 +24,31 @@ class OpinionController @Inject()(
    */
   val opinionForm: Form[CreateOpinionForm] = Form {
     mapping(
-      "title" -> nonEmptyText,
-      "content" -> nonEmptyText
+      "opinionTitle" -> nonEmptyText,
+      "opinionText" -> nonEmptyText,
+      "opinionStarRatio" -> number
     )(CreateOpinionForm.apply)(CreateOpinionForm.unapply)
   }
 
-  def writeOpinion(product_id: Long) = Action.async { implicit request =>
-    productsRepo.getProductObjById(product_id).map{ product =>
-      Ok(views.html.write_opinion_view(product, opinionForm))
-    }
-  }
+  val headers = (
+    "Access-Control-Allow-Origin" -> "*",
+    "Access-Control-Allow-Methods" -> "GET, POST, OPTIONS, DELETE, PUT",
+    "Access-Control-Allow-Headers" -> "Host, Connection, Accept, Authorization, Content-Type, X-Requested-With, User-Agent, Referer, Methods"
+  )
 
   def addOpinion(product_id: Long) = Action.async { implicit request =>
 
-
+    print("Dodaje opinie dla produktu", product_id)
     opinionForm.bindFromRequest.fold(
       errorForm => {
         Future.successful(
-            Ok(views.html.write_opinion_view(Product(1, "","",-1, 0.00f),errorForm))
+          Ok(Json.obj("result" -> false)).withHeaders(headers._1,headers._2,headers._3)
         )
       },
       opinion => {
-        opinionsRepo.create(Opinion(product_id, opinion.title, opinion.content)).map { _ =>
+        opinionsRepo.create(Opinion(product_id, opinion.title, opinion.content, opinion.star_ratio)).map { _ =>
           // If successful, we simply redirect to the index page.
-          Redirect(routes.OpinionController.writeOpinion(product_id)).flashing("success" -> "dodano opinie")
+          Ok(Json.obj("result" -> true)).withHeaders(headers._1,headers._2,headers._3)
         }
       }
     )
@@ -56,16 +57,11 @@ class OpinionController @Inject()(
 
   def getOpinions(product_id: Long) = Action.async { implicit request =>
     opinionsRepo.list(product_id).map { opinions =>
-
-      productsRepo.getProductObjById(product_id).onComplete{product =>
-        val prodName = product.get.name
-        Ok(views.html.opinions_view(prodName, opinions))
-      }
-      Ok(views.html.opinions_view("", opinions))
+      Ok(Json.toJson(opinions)).withHeaders(headers._1,headers._2,headers._3)
     }
   }
 
 
 }
 
-case class CreateOpinionForm(title: String, content: String)
+case class CreateOpinionForm(title: String, content: String, star_ratio: Int)

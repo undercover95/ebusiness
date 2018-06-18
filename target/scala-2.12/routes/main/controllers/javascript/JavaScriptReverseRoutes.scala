@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/michal/Desktop/ebiznes/play-products-crud-slick-master/conf/routes
-// @DATE:Sat Jun 02 22:37:28 CEST 2018
+// @DATE:Sat Jun 16 01:07:53 CEST 2018
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -10,23 +10,13 @@ import _root_.controllers.Assets.Asset
 // @LINE:6
 package controllers.javascript {
 
-  // @LINE:29
+  // @LINE:30
   class ReverseOpinionController(_prefix: => String) {
 
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
-  
-    // @LINE:29
-    def writeOpinion: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.OpinionController.writeOpinion",
-      """
-        function(product_id0) {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "writeopinion/" + encodeURIComponent((""" + implicitly[play.api.mvc.PathBindable[Long]].javascriptUnbind + """)("product_id", product_id0))})
-        }
-      """
-    )
   
     // @LINE:31
     def getOpinions: JavaScriptReverseRoute = JavaScriptReverseRoute(
@@ -70,7 +60,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:18
+  // @LINE:19
   class ReverseCartController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -78,7 +68,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:20
+    // @LINE:21
     def deleteCartItem: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.CartController.deleteCartItem",
       """
@@ -88,7 +78,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:19
+    // @LINE:20
     def addCartItem: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.CartController.addCartItem",
       """
@@ -98,7 +88,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:18
+    // @LINE:19
     def getCartItems: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.CartController.getCartItems",
       """
@@ -110,7 +100,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:12
+  // @LINE:13
   class ReverseCategoryController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -118,7 +108,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:13
+    // @LINE:14
     def getCategoriesWithCounters: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.CategoryController.getCategoriesWithCounters",
       """
@@ -128,7 +118,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:14
+    // @LINE:15
     def addCategory: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.CategoryController.addCategory",
       """
@@ -138,7 +128,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:12
+    // @LINE:13
     def getCategories: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.CategoryController.getCategories",
       """
@@ -158,7 +148,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:7
+    // @LINE:8
     def addProduct: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.ProductController.addProduct",
       """
@@ -178,7 +168,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:8
+    // @LINE:9
     def deleteProduct: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.ProductController.deleteProduct",
       """
@@ -188,9 +178,19 @@ package controllers.javascript {
       """
     )
   
+    // @LINE:7
+    def getProductDataById: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.ProductController.getProductDataById",
+      """
+        function(prod_id0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "product/" + encodeURIComponent((""" + implicitly[play.api.mvc.PathBindable[Long]].javascriptUnbind + """)("prod_id", prod_id0))})
+        }
+      """
+    )
+  
   }
 
-  // @LINE:24
+  // @LINE:25
   class ReverseOrderController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -198,7 +198,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:25
+    // @LINE:26
     def makeOrder: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.OrderController.makeOrder",
       """
@@ -208,7 +208,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:24
+    // @LINE:25
     def getOrders: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.OrderController.getOrders",
       """

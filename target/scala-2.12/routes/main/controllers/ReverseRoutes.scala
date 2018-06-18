@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/michal/Desktop/ebiznes/play-products-crud-slick-master/conf/routes
-// @DATE:Sat Jun 02 22:37:28 CEST 2018
+// @DATE:Sat Jun 16 01:07:53 CEST 2018
 
 import play.api.mvc.Call
 
@@ -10,18 +10,12 @@ import _root_.controllers.Assets.Asset
 // @LINE:6
 package controllers {
 
-  // @LINE:29
+  // @LINE:30
   class ReverseOpinionController(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
-  
-    // @LINE:29
-    def writeOpinion(product_id:Long): Call = {
-      
-      Call("GET", _prefix + { _defaultPrefix } + "writeopinion/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[Long]].unbind("product_id", product_id)))
-    }
   
     // @LINE:31
     def getOpinions(product_id:Long): Call = {
@@ -52,26 +46,26 @@ package controllers {
   
   }
 
-  // @LINE:18
+  // @LINE:19
   class ReverseCartController(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:20
+    // @LINE:21
     def deleteCartItem(): Call = {
       
       Call("POST", _prefix + { _defaultPrefix } + "deletecartitem")
     }
   
-    // @LINE:19
+    // @LINE:20
     def addCartItem(): Call = {
       
       Call("POST", _prefix + { _defaultPrefix } + "addcartitem")
     }
   
-    // @LINE:18
+    // @LINE:19
     def getCartItems(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "cart")
@@ -79,26 +73,26 @@ package controllers {
   
   }
 
-  // @LINE:12
+  // @LINE:13
   class ReverseCategoryController(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:13
+    // @LINE:14
     def getCategoriesWithCounters(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "categoriesWithCounters")
     }
   
-    // @LINE:14
+    // @LINE:15
     def addCategory(): Call = {
       
       Call("POST", _prefix + { _defaultPrefix } + "addcategory")
     }
   
-    // @LINE:12
+    // @LINE:13
     def getCategories(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "categories")
@@ -113,7 +107,7 @@ package controllers {
     }
 
   
-    // @LINE:7
+    // @LINE:8
     def addProduct(): Call = {
       
       Call("POST", _prefix + { _defaultPrefix } + "addproduct")
@@ -125,28 +119,34 @@ package controllers {
       Call("GET", _prefix + { _defaultPrefix } + "products/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[Int]].unbind("cat_id", cat_id)))
     }
   
-    // @LINE:8
+    // @LINE:9
     def deleteProduct(id:Long): Call = {
       
       Call("POST", _prefix + { _defaultPrefix } + "deleteproduct/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[Long]].unbind("id", id)))
     }
   
+    // @LINE:7
+    def getProductDataById(prod_id:Long): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "product/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[Long]].unbind("prod_id", prod_id)))
+    }
+  
   }
 
-  // @LINE:24
+  // @LINE:25
   class ReverseOrderController(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:25
+    // @LINE:26
     def makeOrder(): Call = {
       
       Call("POST", _prefix + { _defaultPrefix } + "makeorder")
     }
   
-    // @LINE:24
+    // @LINE:25
     def getOrders(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "orders")
