@@ -1,15 +1,12 @@
 import React from 'react';
 
-import { Row, Col, Card, CardImg, CardBody,
-  CardTitle, CardSubtitle, Button } from 'reactstrap';
+import { Row, Col } from 'reactstrap';
 
 import Opinion from './Opinion';
 import Opinion_addNew from './Opinion_addNew';
 
-import OpinionStore from "stores/OpinionStore";
-import * as OpinionActions from "actions/OpinionActions";
-
-const axios = require('axios');
+import OpinionStore from 'stores/OpinionStore';
+import * as OpinionActions from 'actions/OpinionActions';
 
 export default class Opinions extends React.Component {
 
@@ -35,7 +32,6 @@ export default class Opinions extends React.Component {
   }
 
   listOpinions() {
-    console.log("listuje opinie")
     this.setState({
       opinions: OpinionStore.getOpinionsData()
     })

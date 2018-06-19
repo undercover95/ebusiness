@@ -1,14 +1,13 @@
 import React from 'react';
 
-import { Button, Form, FormGroup, Label, Input, FormText, Alert } from 'reactstrap';
-import * as CategoriesActions from "actions/CategoriesActions";
-import ResponseStore from "stores/ResponseStore";
+import { Button, Form, FormGroup, Label, Input, Alert } from 'reactstrap';
+import * as CategoriesActions from 'actions/CategoriesActions';
+import ResponseStore from 'stores/ResponseStore';
 
 import FormResponse from './FormResponse';
 
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import { faSpinner } from '@fortawesome/fontawesome-free-solid'
-import {faExclamationCircle} from "@fortawesome/fontawesome-free-solid/index";
 
 export default class AddCategoryForm extends React.Component {
 
@@ -27,7 +26,6 @@ export default class AddCategoryForm extends React.Component {
       beforeSend: '',
       response: ResponseStore.getResponse('addCategoryResponse')
     });
-    console.log("Dodalem kategorie, odp:",this.state.response)
   }
 
   componentWillMount() {

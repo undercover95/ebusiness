@@ -1,6 +1,5 @@
 import React from 'react';
-import { Badge, ListGroup, ListGroupItem } from 'reactstrap';
-import FontAwesome from 'react-fontawesome';
+import { ListGroup, ListGroupItem } from 'reactstrap';
 
 import * as CategoriesActions from 'actions/CategoriesActions';
 import CategoriesStore from 'stores/CategoriesStore';
@@ -35,8 +34,6 @@ export default class Categories extends React.Component {
     this.setState({
       categoriesData: CategoriesStore.getCategoriesData()
     });
-
-    console.log(this.state.categoriesData);
   }
 
   render() {

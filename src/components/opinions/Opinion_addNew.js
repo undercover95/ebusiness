@@ -1,15 +1,9 @@
 import React from 'react';
 
-import { Row, Col, Card, CardImg, CardBody,
-  CardTitle, CardSubtitle, Button, Form, FormGroup, Label, Input, Alert } from 'reactstrap';
-import * as OpinionActions from "actions/OpinionActions";
+import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import * as OpinionActions from 'actions/OpinionActions';
 
 import Rating from './Rating';
-
-import FontAwesomeIcon from '@fortawesome/react-fontawesome'
-import {faSpinner} from "@fortawesome/fontawesome-free-solid/index";
-
-const axios = require('axios');
 
 export default class Opinion_addNew extends React.Component {
 

@@ -5,14 +5,11 @@ import {
   NavbarToggler,
   NavbarBrand,
   Nav,
-  NavItem,
-  NavLink,
-  Badge
+  NavItem
 } from 'reactstrap';
 
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import {
-  faShoppingCart,
   faSignInAlt,
   faUserPlus
 } from '@fortawesome/fontawesome-free-solid'
@@ -22,7 +19,7 @@ import {
 } from 'react-router-dom';
 
 import TopBar_cartCounter from './TopBar_cartCounter';
-
+const axios = require('axios');
 
 export default class TopBar extends React.Component {
   constructor(props) {
@@ -38,6 +35,13 @@ export default class TopBar extends React.Component {
     this.setState({
       isOpen: !this.state.isOpen
     });
+  }
+
+  componentDidMount() {
+    axios.get('http://localhost:9090/loginResult').then(res => {
+        console.log(res.data);
+      }
+    );
   }
 
   render() {

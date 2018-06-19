@@ -14,7 +14,7 @@ export function addProductToCart(product_id) {
     url: 'http://localhost:9090/addcartitem',
     data: prodData
   }).then((res) => {
-    console.log('addProductToCart AXIOS completed',res);
+    //console.log('addProductToCart AXIOS completed',res);
     Dispather.dispatch({
       type: 'ADD_PRODUCT_TO_CART',
       data: res.data
@@ -26,7 +26,7 @@ export function addProductToCart(product_id) {
 
 export function getCartItems() {
   axios.get('http://localhost:9090/cart').then((productsData) => {
-    console.log('getCartItems AXIOS completed', productsData.data);
+    //console.log('getCartItems AXIOS completed', productsData.data);
     Dispather.dispatch({
       type: 'GET_CART_ITEMS',
       data: productsData.data
@@ -47,7 +47,7 @@ export function deleteProductFromCart(product_id) {
     url: 'http://localhost:9090/deletecartitem',
     data: prodData
   }).then((res) => {
-    console.log('deleteProductFromCart AXIOS completed',res);
+    //console.log('deleteProductFromCart AXIOS completed',res);
     getCartItems() // refresh
   }).catch((err) => {
     console.log('AXIOS deleteProductFromCart FAILED', err)

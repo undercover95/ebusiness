@@ -1,10 +1,9 @@
 import React from 'react';
 
 import { Button, Row, Col } from 'reactstrap';
-const axios = require('axios');
 
 import CartItem from './CartItem';
-import CartStore from "stores/CartStore";
+import CartStore from 'stores/CartStore';
 import * as CartActions from 'actions/CartActions';
 
 export default class CartLayout extends React.Component {
@@ -50,7 +49,7 @@ export default class CartLayout extends React.Component {
   render() {
     return (
       <Row>
-        <Col md="12">
+        <Col md='12'>
           <h3>Mój koszyk</h3>
           <table className={'table table-hover'}>
             <thead>

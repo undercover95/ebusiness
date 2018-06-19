@@ -1,10 +1,8 @@
 import React from 'react';
-import FontAwesome from 'react-fontawesome';
-import { Container, Row, Col } from 'reactstrap';
-import ProductsListItem from './ProductsListItem';
-import Dispather from "../../Dispatcher";
 
-import * as CategoriesActions from 'actions/CategoriesActions';
+import { Row, Col } from 'reactstrap';
+import ProductsListItem from './ProductsListItem';
+
 import CategoriesStore from 'stores/CategoriesStore';
 
 const axios = require('axios');
@@ -21,7 +19,7 @@ export default class ProductsList extends React.Component {
 
   loadProducts() {
     axios.get('http://localhost:9090/products/'+this.state.cat_id).then((productsData) => {
-      console.log('listProductsInCategory AXIOS completed',productsData);
+      //console.log('listProductsInCategory AXIOS completed',productsData);
       this.setState({
         products: productsData.data
       })
@@ -31,20 +29,15 @@ export default class ProductsList extends React.Component {
   }
 
   componentWillReceiveProps (nextProps) {
-    const oldCatId = this.props.cat_id;
     const newCatId = nextProps.cat_id;
 
     this.setState({
       cat_id: newCatId
     });
-
-    console.log("product list: ", oldCatId, newCatId);
   }
 
   componentDidUpdate(prevProps, prevState) {
-    console.log("componentDidUpdate");
     if(this.props.cat_id != prevProps.cat_id) {
-      console.log("rozny cat_id");
       this.loadProducts();
     }
   }
@@ -59,7 +52,6 @@ export default class ProductsList extends React.Component {
   }
 
   render() {
-    console.log("ProductList render");
     return (
       <div className={'mb-4'}>
         <h4>Lista Produktów <small style={{'fontStyle': 'italic'}}>w kategorii {this.getCategoryName(this.props.cat_id)}</small></h4>
@@ -72,8 +64,6 @@ export default class ProductsList extends React.Component {
             )
           })}
         </Row>
-
-
       </div>
     );
   }

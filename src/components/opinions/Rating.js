@@ -23,12 +23,12 @@ export default class Rating extends React.Component {
     return (
       <StarRatings
         rating={this.state.rating}
-        starRatedColor="gold"
+        starRatedColor='gold'
         changeRating={this.changeRating}
         numberOfStars={5}
         name='rating'
-        starDimension="20px"
-        starSpacing="5px"
+        starDimension='20px'
+        starSpacing='5px'
 
       />
     );

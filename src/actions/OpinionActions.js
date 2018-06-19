@@ -1,7 +1,6 @@
 import Dispather from '../Dispatcher';
 
 const axios = require('axios');
-const qs = require('qs');
 
 export function getOpinions(product_id) {
   axios.get('http://localhost:9090/opinions/'+product_id).then(res => {
@@ -14,7 +13,7 @@ export function getOpinions(product_id) {
 
 export function addOpinion(product_id, newOpinion) {
 
-  console.log("dodaje opinie o id: ",product_id)
+  console.log('dodaje opinie o id: ',product_id)
   axios({
     method: 'post',
     url: 'http://localhost:9090/addopinion/'+product_id,

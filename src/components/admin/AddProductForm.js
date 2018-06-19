@@ -2,16 +2,16 @@ import React from 'react';
 
 import { Button, Form, FormGroup, Label, Input, Alert } from 'reactstrap';
 
-import * as CategoriesActions from "actions/CategoriesActions";
-import * as ProductsActions from "actions/ProductsActions";
+import * as CategoriesActions from 'actions/CategoriesActions';
+import * as ProductsActions from 'actions/ProductsActions';
 
-import CategoriesStore from "stores/CategoriesStore";
-import ResponseStore from "stores/ResponseStore";
+import CategoriesStore from 'stores/CategoriesStore';
+import ResponseStore from 'stores/ResponseStore';
 
 import FormResponse from './FormResponse';
 
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
-import {faSpinner} from "@fortawesome/fontawesome-free-solid/index";
+import {faSpinner} from '@fortawesome/fontawesome-free-solid/index';
 
 export default class AddProductForm extends React.Component {
 
@@ -48,7 +48,7 @@ export default class AddProductForm extends React.Component {
   }
 
   getResponse() {
-    console.log("OPD drom product")
+    console.log('OPD drom product')
     this.setState({
       beforeSend: '',
       response: ResponseStore.getResponse('addProductResponse')
@@ -100,8 +100,8 @@ export default class AddProductForm extends React.Component {
             <Input id='productPrice' type='text' name='productPrice' className='form-control' placeholder='Podaj cenę produktu' required/>
           </FormGroup>
           <FormGroup>
-            <Label for="productCategory">Kategoria produktu:</Label>
-            <Input type="select" name="productCategory" id="productCategory" required>
+            <Label for='productCategory'>Kategoria produktu:</Label>
+            <Input type='select' name='productCategory' id='productCategory' required>
               {
                 categories.map(cat => {
                   return <option value={cat.id} key={cat.id}>{cat.name}</option>

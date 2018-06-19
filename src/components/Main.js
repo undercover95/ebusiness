@@ -7,13 +7,13 @@ import CategoryLayout from './categories/CategoryLayout';
 import AdminLayout from './admin/AdminLayout';
 import CartLayout from './cart/CartLayout';
 import ProductViewLayout from './products/ProductViewLayout';
+import Login from './login/Login';
 
 import Footer from './Footer';
 
 import {
   BrowserRouter as Router,
-  Route,
-  Switch
+  Route
 } from 'react-router-dom';
 
 class AppComponent extends React.Component {
@@ -30,7 +30,8 @@ class AppComponent extends React.Component {
             <Route path={'/category/:id'} component={CategoryLayout} />
             <Route path={'/admin'} component={AdminLayout} />
             <Route path={'/cart'} component={CartLayout} />
-            <Route path={'/productView/:id'} exact component={ProductViewLayout} />
+            <Route path={'/productView/:id'} component={ProductViewLayout} />
+            <Route path={'/login'} component={Login} />
           <Row>
             <Col sm={12}>
               <Footer />

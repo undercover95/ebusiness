@@ -1,6 +1,5 @@
 import React from 'react';
-import { Row, Col, Card, CardImg, CardBody,
-  CardTitle, CardSubtitle, Button } from 'reactstrap';
+import { Row, Col, CardImg, Button } from 'reactstrap';
 
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import {
@@ -50,7 +49,6 @@ export default class ProductViewLayout extends React.Component {
     const opinions = OpinionStore.getOpinionsData();
     opinions.map(op => {
       sum = +sum + +op.star_ratio;
-      console.log(sum)
     });
 
     this.setState({
@@ -62,7 +60,7 @@ export default class ProductViewLayout extends React.Component {
 
   render() {
 
-    const noImgUrl = "https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180";
+    const noImgUrl = 'https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180';
     let data = this.state.productData;
 
     return (
@@ -70,26 +68,26 @@ export default class ProductViewLayout extends React.Component {
         data != null ? (
           <div>
             <Row>
-            <Col md={"5"}>
+            <Col md={'5'}>
               <div style={{'textAlign': 'center'}}>
-              <CardImg style={{'height':'300px','width':'120px'}} src={data.image_url != "" ? data.image_url : noImgUrl} alt="Card image cap" />
+              <CardImg style={{'height':'300px','width':'120px'}} src={data.image_url != '' ? data.image_url : noImgUrl} alt='Card image cap' />
               </div>
             </Col>
-            <Col md={"7"}>
+            <Col md={'7'}>
             <h2>{data.name}</h2>
               <hr/>
               <Row>
                 <Col className={'text-center'}>
                   <h1>{data.price.toFixed(2)}&nbsp;zł</h1>
-                  <Button size="sm" className={'mt-2'} color={'primary'} onClick={() => CartActions.addProductToCart(data.id)}><FontAwesomeIcon icon={faCartPlus} /> Do koszyka</Button>
+                  <Button size='sm' className={'mt-2'} color={'primary'} onClick={() => CartActions.addProductToCart(data.id)}><FontAwesomeIcon icon={faCartPlus} /> Do koszyka</Button>
                 </Col>
                 <Col className={'text-center'}>
                   Średnia ocena:<br/>
                   <StarRatings
                     rating={this.state.averageRating}
-                    starDimension="30px"
-                    starSpacing="8px"
-                    starRatedColor="gold"
+                    starDimension='30px'
+                    starSpacing='8px'
+                    starRatedColor='gold'
                   />
                 </Col>
               </Row>

@@ -15,17 +15,14 @@ export default class CategoryLayout extends React.Component {
   }
 
   componentWillReceiveProps (nextProps) {
-    const oldCatId = this.props.match.params.id;
     const newCatId = nextProps.match.params.id;
 
-    console.log("CategoryLayout props:", oldCatId, newCatId)
     this.setState({
       cat_id: newCatId
     });
   }
 
   render() {
-    console.log("CategoryLayout render");
     return (
       <Row>
         <Col md="3">
