@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/michal/Desktop/ebiznes/play-products-crud-slick-master/conf/routes
-// @DATE:Sat Jun 16 01:07:53 CEST 2018
+// @DATE:Tue Jun 19 11:40:40 CEST 2018
 
 
 package router {

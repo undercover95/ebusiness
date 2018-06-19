@@ -6,6 +6,7 @@ import play.api.mvc._
 
 import scala.concurrent.{ExecutionContext, Future}
 import scala.util.{Failure, Success}
+import play.api.libs.json.Json
 
 class OrderController @Inject()(
                                  productsRepo: ProductRepository,
@@ -35,14 +36,14 @@ class OrderController @Inject()(
                   //products :+= product.get
                   res(order) :+= product.get
                   println("Order products: "+res(order))
-                  Ok(views.html.orders_view(res))
+                  Ok(Json.obj("res" -> true))
               }
             }
 
             println("Products for order id "+order.order_id + " => "+products)
         }
       }
-      Ok(views.html.orders_view(res))
+      Ok(Json.obj("res" -> true))
     }
   }
 
@@ -59,7 +60,7 @@ class OrderController @Inject()(
         }
       }*/
 
-      Redirect(routes.OrderController.getOrders()).flashing("success" -> "zamówienie złożone")
+      Ok(Json.obj("res" -> true))
     }
   }
 

@@ -3,7 +3,6 @@ package models
 import javax.inject.{ Inject, Singleton }
 import play.api.db.slick.DatabaseConfigProvider
 import slick.jdbc.JdbcProfile
-import models.CategoryRepository
 import scala.concurrent.{ Future, ExecutionContext }
 
 /**
@@ -20,11 +19,6 @@ class ProductRepository @Inject() (dbConfigProvider: DatabaseConfigProvider, cat
   // The second one brings the Slick DSL into scope, which lets you define the table and other queries.
   import dbConfig._
   import profile.api._
-
-  /**
-   * Here we define the table. It will have a name of people
-   */
-  import categoryRepository.CategoryTable
 
   private class ProductTable(tag: Tag) extends Table[Product](tag, "product") {
 

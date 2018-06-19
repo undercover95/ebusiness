@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/michal/Desktop/ebiznes/play-products-crud-slick-master/conf/routes
-// @DATE:Sat Jun 16 01:07:53 CEST 2018
+// @DATE:Tue Jun 19 11:40:40 CEST 2018
 
 package router
 
@@ -10,6 +10,7 @@ import play.core.routing.HandlerInvokerFactory._
 import play.api.mvc._
 
 import _root_.controllers.Assets.Asset
+import _root_.utils.route.Binders._
 
 class Routes(
   override val errorHandler: play.api.http.HttpErrorHandler, 
@@ -20,10 +21,12 @@ class Routes(
   // @LINE:19
   CartController_2: controllers.CartController,
   // @LINE:25
-  OrderController_5: controllers.OrderController,
+  OrderController_6: controllers.OrderController,
   // @LINE:30
   OpinionController_0: controllers.OpinionController,
-  // @LINE:35
+  // @LINE:34
+  SocialAuthController_5: controllers.SocialAuthController,
+  // @LINE:38
   Assets_4: controllers.Assets,
   val prefix: String
 ) extends GeneratedRouter {
@@ -37,16 +40,18 @@ class Routes(
     // @LINE:19
     CartController_2: controllers.CartController,
     // @LINE:25
-    OrderController_5: controllers.OrderController,
+    OrderController_6: controllers.OrderController,
     // @LINE:30
     OpinionController_0: controllers.OpinionController,
-    // @LINE:35
+    // @LINE:34
+    SocialAuthController_5: controllers.SocialAuthController,
+    // @LINE:38
     Assets_4: controllers.Assets
-  ) = this(errorHandler, ProductController_1, CategoryController_3, CartController_2, OrderController_5, OpinionController_0, Assets_4, "/")
+  ) = this(errorHandler, ProductController_1, CategoryController_3, CartController_2, OrderController_6, OpinionController_0, SocialAuthController_5, Assets_4, "/")
 
   def withPrefix(prefix: String): Routes = {
     router.RoutesPrefix.setPrefix(prefix)
-    new Routes(errorHandler, ProductController_1, CategoryController_3, CartController_2, OrderController_5, OpinionController_0, Assets_4, prefix)
+    new Routes(errorHandler, ProductController_1, CategoryController_3, CartController_2, OrderController_6, OpinionController_0, SocialAuthController_5, Assets_4, prefix)
   }
 
   private[this] val defaultPrefix: String = {
@@ -68,6 +73,8 @@ class Routes(
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """makeorder""", """controllers.OrderController.makeOrder"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """addopinion/""" + "$" + """product_id<[^/]+>""", """controllers.OpinionController.addOpinion(product_id:Long)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """opinions/""" + "$" + """product_id<[^/]+>""", """controllers.OpinionController.getOpinions(product_id:Long)"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """login/""" + "$" + """provider<[^/]+>""", """controllers.SocialAuthController.authenticate(provider:String)"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """loginResult""", """controllers.SocialAuthController.loginResult"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/""" + "$" + """file<.+>""", """controllers.Assets.versioned(path:String = "/public", file:Asset)"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
@@ -261,7 +268,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("orders")))
   )
   private[this] lazy val controllers_OrderController_getOrders10_invoker = createInvoker(
-    OrderController_5.getOrders,
+    OrderController_6.getOrders,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.OrderController",
@@ -279,7 +286,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("makeorder")))
   )
   private[this] lazy val controllers_OrderController_makeOrder11_invoker = createInvoker(
-    OrderController_5.makeOrder,
+    OrderController_6.makeOrder,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.OrderController",
@@ -328,11 +335,47 @@ class Routes(
     )
   )
 
+  // @LINE:34
+  private[this] lazy val controllers_SocialAuthController_authenticate14_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("login/"), DynamicPart("provider", """[^/]+""",true)))
+  )
+  private[this] lazy val controllers_SocialAuthController_authenticate14_invoker = createInvoker(
+    SocialAuthController_5.authenticate(fakeValue[String]),
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.SocialAuthController",
+      "authenticate",
+      Seq(classOf[String]),
+      "GET",
+      this.prefix + """login/""" + "$" + """provider<[^/]+>""",
+      """ Login""",
+      Seq()
+    )
+  )
+
   // @LINE:35
-  private[this] lazy val controllers_Assets_versioned14_route = Route("GET",
+  private[this] lazy val controllers_SocialAuthController_loginResult15_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("loginResult")))
+  )
+  private[this] lazy val controllers_SocialAuthController_loginResult15_invoker = createInvoker(
+    SocialAuthController_5.loginResult,
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.SocialAuthController",
+      "loginResult",
+      Nil,
+      "GET",
+      this.prefix + """loginResult""",
+      """""",
+      Seq()
+    )
+  )
+
+  // @LINE:38
+  private[this] lazy val controllers_Assets_versioned16_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_Assets_versioned14_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_versioned16_invoker = createInvoker(
     Assets_4.versioned(fakeValue[String], fakeValue[Asset]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -412,13 +455,13 @@ class Routes(
     // @LINE:25
     case controllers_OrderController_getOrders10_route(params@_) =>
       call { 
-        controllers_OrderController_getOrders10_invoker.call(OrderController_5.getOrders)
+        controllers_OrderController_getOrders10_invoker.call(OrderController_6.getOrders)
       }
   
     // @LINE:26
     case controllers_OrderController_makeOrder11_route(params@_) =>
       call { 
-        controllers_OrderController_makeOrder11_invoker.call(OrderController_5.makeOrder)
+        controllers_OrderController_makeOrder11_invoker.call(OrderController_6.makeOrder)
       }
   
     // @LINE:30
@@ -433,10 +476,22 @@ class Routes(
         controllers_OpinionController_getOpinions13_invoker.call(OpinionController_0.getOpinions(product_id))
       }
   
+    // @LINE:34
+    case controllers_SocialAuthController_authenticate14_route(params@_) =>
+      call(params.fromPath[String]("provider", None)) { (provider) =>
+        controllers_SocialAuthController_authenticate14_invoker.call(SocialAuthController_5.authenticate(provider))
+      }
+  
     // @LINE:35
-    case controllers_Assets_versioned14_route(params@_) =>
+    case controllers_SocialAuthController_loginResult15_route(params@_) =>
+      call { 
+        controllers_SocialAuthController_loginResult15_invoker.call(SocialAuthController_5.loginResult)
+      }
+  
+    // @LINE:38
+    case controllers_Assets_versioned16_route(params@_) =>
       call(Param[String]("path", Right("/public")), params.fromPath[Asset]("file", None)) { (path, file) =>
-        controllers_Assets_versioned14_invoker.call(Assets_4.versioned(path, file))
+        controllers_Assets_versioned16_invoker.call(Assets_4.versioned(path, file))
       }
   }
 }

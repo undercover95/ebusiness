@@ -1,11 +1,12 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/michal/Desktop/ebiznes/play-products-crud-slick-master/conf/routes
-// @DATE:Sat Jun 16 01:07:53 CEST 2018
+// @DATE:Tue Jun 19 11:40:40 CEST 2018
 
 import play.api.routing.JavaScriptReverseRoute
 
 
 import _root_.controllers.Assets.Asset
+import _root_.utils.route.Binders._
 
 // @LINE:6
 package controllers.javascript {
@@ -40,7 +41,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:35
+  // @LINE:38
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -48,12 +49,42 @@ package controllers.javascript {
     }
 
   
-    // @LINE:35
+    // @LINE:38
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """
         function(file1) {
           return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "assets/" + (""" + implicitly[play.api.mvc.PathBindable[Asset]].javascriptUnbind + """)("file", file1)})
+        }
+      """
+    )
+  
+  }
+
+  // @LINE:34
+  class ReverseSocialAuthController(_prefix: => String) {
+
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:34
+    def authenticate: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.SocialAuthController.authenticate",
+      """
+        function(provider0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "login/" + encodeURIComponent((""" + implicitly[play.api.mvc.PathBindable[String]].javascriptUnbind + """)("provider", provider0))})
+        }
+      """
+    )
+  
+    // @LINE:35
+    def loginResult: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.SocialAuthController.loginResult",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "loginResult"})
         }
       """
     )

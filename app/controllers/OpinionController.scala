@@ -38,7 +38,7 @@ class OpinionController @Inject()(
 
   def addOpinion(product_id: Long) = Action.async { implicit request =>
 
-    print("Dodaje opinie dla produktu", product_id)
+    //print("Dodaje opinie dla produktu", product_id)
     opinionForm.bindFromRequest.fold(
       errorForm => {
         Future.successful(

@@ -1,4 +1,7 @@
-[warn] /home/michal/Desktop/ebiznes/play-products-crud-slick-master/app/models/ProductRepository.scala:6:15: imported `CategoryRepository' is permanently hidden by definition of class CategoryRepository in package models
-[warn] import models.CategoryRepository
-[warn]               ^
-[warn] one warning found
+[error] /home/michal/Desktop/ebiznes/play-products-crud-slick-master/app/controllers/SocialAuthController.scala:69:120: not enough arguments for method loginResult: (identity: Option[String])play.api.mvc.Call.
+[error] Unspecified value parameter identity.
+[error]             result <- silhouette.env.authenticatorService.embed(value, Redirect(routes.SocialAuthController.loginResult()))
+[error]                                                                                                                        ^
+[error] /home/michal/Desktop/ebiznes/play-products-crud-slick-master/conf/routes:35:1: no arguments allowed for nullary method loginResult: ()play.api.mvc.Action[play.api.mvc.AnyContent]
+[error] GET    /loginResult                 controllers.SocialAuthController.loginResult(identity: Option[String])
+[error] two errors found

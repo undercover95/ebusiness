@@ -1,11 +1,12 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/michal/Desktop/ebiznes/play-products-crud-slick-master/conf/routes
-// @DATE:Sat Jun 16 01:07:53 CEST 2018
+// @DATE:Tue Jun 19 11:40:40 CEST 2018
 
 import play.api.mvc.Call
 
 
 import _root_.controllers.Assets.Asset
+import _root_.utils.route.Binders._
 
 // @LINE:6
 package controllers {
@@ -31,17 +32,38 @@ package controllers {
   
   }
 
-  // @LINE:35
+  // @LINE:38
   class ReverseAssets(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:35
+    // @LINE:38
     def versioned(file:Asset): Call = {
       implicit lazy val _rrc = new play.core.routing.ReverseRouteContext(Map(("path", "/public"))); _rrc
       Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[play.api.mvc.PathBindable[Asset]].unbind("file", file))
+    }
+  
+  }
+
+  // @LINE:34
+  class ReverseSocialAuthController(_prefix: => String) {
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:34
+    def authenticate(provider:String): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "login/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[String]].unbind("provider", provider)))
+    }
+  
+    // @LINE:35
+    def loginResult(): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "loginResult")
     }
   
   }

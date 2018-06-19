@@ -30,6 +30,9 @@ POST    /makeorder                  controllers.OrderController.makeOrder
 POST   /addopinion/:product_id      controllers.OpinionController.addOpinion(product_id: Long)
 GET    /opinions/:product_id        controllers.OpinionController.getOpinions(product_id: Long)
 
+# Login
+GET    /login/:provider             controllers.SocialAuthController.authenticate(provider: String)
+GET    /loginResult                 controllers.SocialAuthController.loginResult
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)

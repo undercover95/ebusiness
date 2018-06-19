@@ -4,5 +4,6 @@
 [debug] 	(/home/michal/Desktop/ebiznes/play-products-crud-slick-master/conf/evolutions,/home/michal/Desktop/ebiznes/play-products-crud-slick-master/target/scala-2.12/classes/evolutions)
 [debug] 	(/home/michal/Desktop/ebiznes/play-products-crud-slick-master/conf/routes,/home/michal/Desktop/ebiznes/play-products-crud-slick-master/target/scala-2.12/classes/routes)
 [debug] 	(/home/michal/Desktop/ebiznes/play-products-crud-slick-master/conf/messages,/home/michal/Desktop/ebiznes/play-products-crud-slick-master/target/scala-2.12/classes/messages)
+[debug] 	(/home/michal/Desktop/ebiznes/play-products-crud-slick-master/conf/silhouette.conf,/home/michal/Desktop/ebiznes/play-products-crud-slick-master/target/scala-2.12/classes/silhouette.conf)
 [debug] 	(/home/michal/Desktop/ebiznes/play-products-crud-slick-master/conf/evolutions/default,/home/michal/Desktop/ebiznes/play-products-crud-slick-master/target/scala-2.12/classes/evolutions/default)
 [debug] 	(/home/michal/Desktop/ebiznes/play-products-crud-slick-master/conf/evolutions/default/1.sql,/home/michal/Desktop/ebiznes/play-products-crud-slick-master/target/scala-2.12/classes/evolutions/default/1.sql)
