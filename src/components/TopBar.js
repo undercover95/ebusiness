@@ -5,12 +5,14 @@ import {
   NavbarToggler,
   NavbarBrand,
   Nav,
-  NavItem
+  NavItem,
+  Button
 } from 'reactstrap';
 
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import {
   faSignInAlt,
+  faSignOutAlt,
   faUserPlus
 } from '@fortawesome/fontawesome-free-solid'
 
@@ -22,12 +24,14 @@ import TopBar_cartCounter from './TopBar_cartCounter';
 const axios = require('axios');
 
 export default class TopBar extends React.Component {
+
   constructor(props) {
     super(props);
 
     this.toggle = this.toggle.bind(this);
     this.state = {
       isOpen: false,
+      userData: null
     };
   }
 
@@ -38,13 +42,31 @@ export default class TopBar extends React.Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:9090/loginResult').then(res => {
-        console.log(res.data);
-      }
-    );
+    axios.get('http://localhost:9090/getUser', {
+      withCredentials: true // !!!!
+    }).then(res => {
+        let userDataJson = res.data;
+        if(userDataJson != "") {
+          this.setState({
+            userData: userDataJson
+          })
+        }
+    });
+
+  }
+
+  logout() {
+    console.log("proboje wylogowac")
+
+    axios.get('http://localhost:9090/logout', {
+      withCredentials: true // !!!!
+    }).then(res => {
+      console.log(res.data);
+    });
   }
 
   render() {
+
     return (
       <div>
         <Navbar color="light" light expand="md" className={'mb-3'}>
@@ -55,13 +77,27 @@ export default class TopBar extends React.Component {
               <NavItem>
                 <TopBar_cartCounter />
               </NavItem>
-              <NavItem>
-                <Link activeClassName='active' className="nav-link" to="/register"><FontAwesomeIcon icon={faUserPlus} />  Zarejestruj się</Link>
-              </NavItem>
-              <NavItem>
-                <Link activeClassName='active' className="nav-link" to="/login"><FontAwesomeIcon icon={faSignInAlt} /> Zaloguj się</Link>
-              </NavItem>
             </Nav>
+              {
+                this.state.userData != null ? (
+                  <Nav navbar>
+                    <NavItem>
+                      <Link activeClassName='active' className="nav-link" to="#"><img src={this.state.userData.avatarURL} width={24} className={'mr-1'}/> {this.state.userData.fullName}</Link>
+                    </NavItem>
+                    <NavItem>
+                      <a className="nav-link" href={'http://localhost:9090/logout'}><FontAwesomeIcon icon={faSignOutAlt} /> Wyloguj się</a>
+                    </NavItem>
+                  </Nav>
+                ) : (
+                  <Nav navbar>
+                    <NavItem>
+                      <Link activeClassName='active' className="nav-link" to="/login"><FontAwesomeIcon icon={faSignInAlt} /> Zaloguj się</Link>
+                    </NavItem>
+                  </Nav>
+                )
+              }
+
+
           </Collapse>
         </Navbar>
       </div>

@@ -10,8 +10,15 @@ export default class CategoryLayout extends React.Component {
   constructor() {
     super();
     this.state = {
-      cat_id: 1
+      cat_id: 0
     }
+  }
+
+  componentDidMount() {
+    this.setState({
+      cat_id: this.props.match.params.id
+    });
+
   }
 
   componentWillReceiveProps (nextProps) {
