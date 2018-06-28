@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/michal/Desktop/ebiznes/play-products-crud-slick-master/conf/routes
-// @DATE:Tue Jun 19 11:40:40 CEST 2018
+// @DATE:Thu Jun 28 22:19:19 CEST 2018
 
 import play.api.mvc.Call
 
@@ -32,14 +32,14 @@ package controllers {
   
   }
 
-  // @LINE:38
+  // @LINE:40
   class ReverseAssets(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:38
+    // @LINE:40
     def versioned(file:Asset): Call = {
       implicit lazy val _rrc = new play.core.routing.ReverseRouteContext(Map(("path", "/public"))); _rrc
       Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[play.api.mvc.PathBindable[Asset]].unbind("file", file))
@@ -53,6 +53,18 @@ package controllers {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
+  
+    // @LINE:36
+    def getUserData(): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "getUser")
+    }
+  
+    // @LINE:37
+    def signOut(): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "logout")
+    }
   
     // @LINE:34
     def authenticate(provider:String): Call = {

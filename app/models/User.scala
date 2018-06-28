@@ -2,7 +2,8 @@ package models
 
 import java.util.UUID
 
-import com.mohiva.play.silhouette.api.{ Identity, LoginInfo }
+import com.mohiva.play.silhouette.api.{Identity, LoginInfo}
+import play.api.libs.json.Json
 
 /**
  * The user object.
@@ -39,4 +40,8 @@ case class User(
       case _ => None
     }
   }
+}
+
+object User {
+  implicit val orderFormat = Json.format[User]
 }

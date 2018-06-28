@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/michal/Desktop/ebiznes/play-products-crud-slick-master/conf/routes
-// @DATE:Tue Jun 19 11:40:40 CEST 2018
+// @DATE:Thu Jun 28 22:19:19 CEST 2018
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -41,7 +41,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:38
+  // @LINE:40
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -49,7 +49,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:38
+    // @LINE:40
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """
@@ -68,6 +68,26 @@ package controllers.javascript {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
+  
+    // @LINE:36
+    def getUserData: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.SocialAuthController.getUserData",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "getUser"})
+        }
+      """
+    )
+  
+    // @LINE:37
+    def signOut: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.SocialAuthController.signOut",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "logout"})
+        }
+      """
+    )
   
     // @LINE:34
     def authenticate: JavaScriptReverseRoute = JavaScriptReverseRoute(

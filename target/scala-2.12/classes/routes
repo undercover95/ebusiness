@@ -33,6 +33,8 @@ GET    /opinions/:product_id        controllers.OpinionController.getOpinions(pr
 # Login
 GET    /login/:provider             controllers.SocialAuthController.authenticate(provider: String)
 GET    /loginResult                 controllers.SocialAuthController.loginResult
+GET    /getUser                     controllers.SocialAuthController.getUserData
+GET    /logout                      controllers.SocialAuthController.signOut
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)

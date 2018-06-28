@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/michal/Desktop/ebiznes/play-products-crud-slick-master/conf/routes
-// @DATE:Tue Jun 19 11:40:40 CEST 2018
+// @DATE:Thu Jun 28 22:19:19 CEST 2018
 
 package router
 
@@ -26,7 +26,7 @@ class Routes(
   OpinionController_0: controllers.OpinionController,
   // @LINE:34
   SocialAuthController_5: controllers.SocialAuthController,
-  // @LINE:38
+  // @LINE:40
   Assets_4: controllers.Assets,
   val prefix: String
 ) extends GeneratedRouter {
@@ -45,7 +45,7 @@ class Routes(
     OpinionController_0: controllers.OpinionController,
     // @LINE:34
     SocialAuthController_5: controllers.SocialAuthController,
-    // @LINE:38
+    // @LINE:40
     Assets_4: controllers.Assets
   ) = this(errorHandler, ProductController_1, CategoryController_3, CartController_2, OrderController_6, OpinionController_0, SocialAuthController_5, Assets_4, "/")
 
@@ -75,6 +75,8 @@ class Routes(
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """opinions/""" + "$" + """product_id<[^/]+>""", """controllers.OpinionController.getOpinions(product_id:Long)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """login/""" + "$" + """provider<[^/]+>""", """controllers.SocialAuthController.authenticate(provider:String)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """loginResult""", """controllers.SocialAuthController.loginResult"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """getUser""", """controllers.SocialAuthController.getUserData"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """logout""", """controllers.SocialAuthController.signOut"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/""" + "$" + """file<.+>""", """controllers.Assets.versioned(path:String = "/public", file:Asset)"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
@@ -371,11 +373,47 @@ class Routes(
     )
   )
 
-  // @LINE:38
-  private[this] lazy val controllers_Assets_versioned16_route = Route("GET",
+  // @LINE:36
+  private[this] lazy val controllers_SocialAuthController_getUserData16_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("getUser")))
+  )
+  private[this] lazy val controllers_SocialAuthController_getUserData16_invoker = createInvoker(
+    SocialAuthController_5.getUserData,
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.SocialAuthController",
+      "getUserData",
+      Nil,
+      "GET",
+      this.prefix + """getUser""",
+      """""",
+      Seq()
+    )
+  )
+
+  // @LINE:37
+  private[this] lazy val controllers_SocialAuthController_signOut17_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("logout")))
+  )
+  private[this] lazy val controllers_SocialAuthController_signOut17_invoker = createInvoker(
+    SocialAuthController_5.signOut,
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.SocialAuthController",
+      "signOut",
+      Nil,
+      "GET",
+      this.prefix + """logout""",
+      """""",
+      Seq()
+    )
+  )
+
+  // @LINE:40
+  private[this] lazy val controllers_Assets_versioned18_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_Assets_versioned16_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_versioned18_invoker = createInvoker(
     Assets_4.versioned(fakeValue[String], fakeValue[Asset]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -488,10 +526,22 @@ class Routes(
         controllers_SocialAuthController_loginResult15_invoker.call(SocialAuthController_5.loginResult)
       }
   
-    // @LINE:38
-    case controllers_Assets_versioned16_route(params@_) =>
+    // @LINE:36
+    case controllers_SocialAuthController_getUserData16_route(params@_) =>
+      call { 
+        controllers_SocialAuthController_getUserData16_invoker.call(SocialAuthController_5.getUserData)
+      }
+  
+    // @LINE:37
+    case controllers_SocialAuthController_signOut17_route(params@_) =>
+      call { 
+        controllers_SocialAuthController_signOut17_invoker.call(SocialAuthController_5.signOut)
+      }
+  
+    // @LINE:40
+    case controllers_Assets_versioned18_route(params@_) =>
       call(Param[String]("path", Right("/public")), params.fromPath[Asset]("file", None)) { (path, file) =>
-        controllers_Assets_versioned16_invoker.call(Assets_4.versioned(path, file))
+        controllers_Assets_versioned18_invoker.call(Assets_4.versioned(path, file))
       }
   }
 }
